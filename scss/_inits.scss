@@ -1,8 +1,11 @@
-.container {
+.row {
     display: flex;
+}
+.container {
     width: 80%;
     margin: 0 auto;
     border: 1px solid black;
+    margin-top: 10px;
 }
 @for $i from 1 through 12 {
     .col-#{$i}{

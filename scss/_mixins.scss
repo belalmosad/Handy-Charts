@@ -1,7 +1,7 @@
-@mixin styleFullBar($bgColor) {
+@mixin styleFullBar() {
     border: 1px solid grey;
     height: 2rem;
-    background-color: $bgColor;
+    background-color: transparent;
 }
 
 @mixin styleAmountBar($bgColor) {
