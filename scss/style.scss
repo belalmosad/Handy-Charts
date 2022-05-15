@@ -1,0 +1,11 @@
+@import 'mixins';
+@import 'inits';
+.full-bar{
+    @include styleFullBar(grey);
+}
+.amount-bar{
+    @include styleAmountBar(green);
+}
+.label-txt {
+    @include styleLabel(green);
+}

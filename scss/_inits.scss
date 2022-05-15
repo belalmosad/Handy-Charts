@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+@for $i from 1 through 12 {
+    .col-#{$i}{
+        width: calc($i / 12)*100%;
+    }
+}
