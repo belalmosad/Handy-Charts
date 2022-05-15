@@ -1,5 +1,5 @@
 function ProgressBar(title, percent){
-    if(percent > 100 || percent < 0) {
+    if(typeof(percent) != "number" || percent > 100 || percent < 0) {
         throw new Error("Enter a valid percent");
     }
     this.title = title;
