@@ -23,6 +23,30 @@
     @extend .row;
     flex-wrap: wrap;
 }
+.center-v {
+    @extend .row;
+    align-items: center;
+}
+.legend {
+    width: 40%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 2px;
+    & span {
+        font-size: larger;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-decoration: underline;
+    }
+    & .legend-label {
+        font-size: larger;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        @media  screen and (max-width: 650px){
+            font-size: large;
+    
+        }
+    }
+}
 
 @for $i from 1 through 12 {
     .col-#{$i}{

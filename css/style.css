@@ -18,7 +18,7 @@
   margin-top: 5px;
 }
 
-.row, .spread {
+.row, .center-v, .spread {
   display: flex;
 }
 
@@ -31,6 +31,32 @@
 
 .spread {
   flex-wrap: wrap;
+}
+
+.center-v {
+  align-items: center;
+}
+
+.legend {
+  width: 40%;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 2px;
+}
+.legend span {
+  font-size: larger;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: underline;
+}
+.legend .legend-label {
+  font-size: larger;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+@media screen and (max-width: 650px) {
+  .legend .legend-label {
+    font-size: large;
+  }
 }
 
 .col-1 {
