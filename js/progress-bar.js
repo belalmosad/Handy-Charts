@@ -1,5 +1,5 @@
 function ProgressBar(title, percent, theme){
-    validateParams(arguments);
+    validateProgressBarParams(arguments);
     this.title = title;
     this.percent = percent;
     this.theme = theme;
@@ -25,7 +25,7 @@ ProgressBar.prototype.draw=function() {
     title.innerHTML = this.title;
     percent.innerHTML = this.percent+"%";
 
-    container.classList.add("container", "row");
+    container.classList.add("progressbar-container", "row", 'container-sm');
     label.classList.add("row", "label", "col-4", "txt-"+this.theme);
     title.classList.add("label-txt", "col-6");
     percent.classList.add("label-txt", "col-6");
@@ -47,10 +47,7 @@ function fillAmountBar(percent, amountBar, percentElement) {
     }, 10);
 }
 
-function validateParams(args) {
-    if(args.length != 3){
-        throw new Error("You should enter three parameters");
-    }
+function validateProgressBarParams(args) {
     if(typeof(args[1]) != "number" || args[1] > 100 || args[1] < 0) { // percent
         throw new Error("Enter a valid percent");
     }
