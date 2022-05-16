@@ -5,6 +5,7 @@
 }
 
 .amount-bar {
+  background-color: black;
   width: 0%;
   height: 2rem;
   border: none;

@@ -1,7 +1,5 @@
 function ProgressBar(title, percent, theme){
-    if(typeof(percent) != "number" || percent > 100 || percent < 0) {
-        throw new Error("Enter a valid percent");
-    }
+    validateParams(arguments);
     this.title = title;
     this.percent = percent;
     this.theme = theme;
@@ -47,4 +45,13 @@ function fillAmountBar(percent, amountBar, percentElement) {
         }
         i++;
     }, 10);
+}
+
+function validateParams(args) {
+    if(args.length != 3){
+        throw new Error("You should enter three parameters");
+    }
+    if(typeof(args[1]) != "number" || args[1] > 100 || args[1] < 0) { // percent
+        throw new Error("Enter a valid percent");
+    }
 }
