@@ -1,5 +1,4 @@
 @import 'mixins';
-@import 'inits';
 @import 'variables';
 .full-bar{
     @include styleFullBar();
@@ -9,4 +8,42 @@
 }
 .label-txt {
     @include styleLabel();
+}
+
+.row {
+    display: flex;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+.spread {
+    @extend .row;
+    flex-wrap: wrap;
+}
+
+@for $i from 1 through 12 {
+    .col-#{$i}{
+        width: calc($i / 12)*100%;
+    }
+}
+@each $name,$val in $themes {
+    .txt-#{$name} {
+        color: $val;
+    }
+    .bg-#{$name} {
+        background-color: $val;
+    }
+    .dot-#{$name}-empty {
+        @include createDot();
+        background-color: $val;
+        border: 1px solid $val;
+    }
+    .dot-#{$name}-full {
+        @include createDot();
+        background-color: $val;
+        border: 1px solid $val;
+    }
 }
