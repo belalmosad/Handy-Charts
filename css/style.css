@@ -18,6 +18,11 @@
   text-align: center;
   margin-top: 5px;
 }
+@media screen and (max-width: 440px) {
+  .label-txt {
+    font-size: medium;
+  }
+}
 
 .row, .center-v, .spread {
   display: flex;
