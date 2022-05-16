@@ -16,3 +16,4 @@ JavaScript library that helps you to create charts for data visualisation.
 - [x] Implement themes in scss.
 - [x] Implement `DotMap` element.
 - [ ] Implement change data functionality in `ProgressBar` and  `DotMap`.
+- [ ] Implement Animation in drawing `DotMap`.
