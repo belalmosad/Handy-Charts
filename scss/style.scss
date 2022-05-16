@@ -14,10 +14,36 @@
     display: flex;
 }
 .container {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     border: 1px solid black;
-    margin-top: 10px;
+    margin-top: 50px;
+    &-sm {
+        @media  screen and (max-width: 650px){
+            width: 95%;
+        }
+    }
+}
+.progressbar-container {
+    @extend .container;
+    border: none;
+}
+.dotmap-container {
+    @extend .container;
+    border: 1px solid grey;
+    border-radius: 5px;
+
+    & .dotmap-title {
+        text-align: center;
+        font-size: x-large;
+        font-weight: bold;
+        width: 70%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0 auto;
+        word-wrap: break-word;         /* All browsers since IE 5.5+ */
+        overflow-wrap: break-word;    /* Renamed property in CSS3 draft spec */
+        padding: 20px 0px;
+    }
 }
 .spread {
     @extend .row;
@@ -29,7 +55,6 @@
 }
 .legend {
     width: 40%;
-    border: 1px solid grey;
     border-radius: 5px;
     margin: 5px;
     padding: 2px;
@@ -37,6 +62,7 @@
         font-size: larger;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         text-decoration: underline;
+        font-weight: bold;
     }
     & .legend-label {
         font-size: larger;
@@ -47,7 +73,6 @@
         }
     }
 }
-
 @for $i from 1 through 12 {
     .col-#{$i}{
         width: calc($i / 12)*100%;
@@ -60,12 +85,7 @@
     .bg-#{$name} {
         background-color: $val;
     }
-    .dot-#{$name}-empty {
-        @include createDot();
-        background-color: $val;
-        border: 1px solid $val;
-    }
-    .dot-#{$name}-full {
+    .dot-#{$name} {
         @include createDot();
         background-color: $val;
         border: 1px solid $val;
