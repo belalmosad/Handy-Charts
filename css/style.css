@@ -57,6 +57,46 @@
   width: 100%;
 }
 
+.txt-eggplant {
+  color: #483248;
+}
+
+.bg-eggplant {
+  background-color: #483248;
+}
+
+.txt-peacock {
+  color: #326872;
+}
+
+.bg-peacock {
+  background-color: #326872;
+}
+
+.txt-slate {
+  color: #708090;
+}
+
+.bg-slate {
+  background-color: #708090;
+}
+
+.txt-coquelicot {
+  color: #ff3800;
+}
+
+.bg-coquelicot {
+  background-color: #ff3800;
+}
+
+.txt-pine {
+  color: #234f1e;
+}
+
+.bg-pine {
+  background-color: #234f1e;
+}
+
 .full-bar {
   border: 1px solid grey;
   height: 2rem;
@@ -64,14 +104,12 @@
 }
 
 .amount-bar {
-  background-color: green;
   width: 0%;
   height: 2rem;
   border: none;
 }
 
 .label-txt {
-  color: green;
   font-size: larger;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   word-wrap: break-word;

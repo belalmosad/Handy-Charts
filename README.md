@@ -13,4 +13,4 @@ JavaScript library that helps you to create charts for data visualisation.
 
 ## TODOs
 - [x] Add `ProgressBar` js class with drawing bar functionality.
-- [ ] Add parameters list validation for `ProgressBar`s class.
+- [x] Implement themes in scss.

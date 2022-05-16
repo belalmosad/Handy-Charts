@@ -1,9 +1,10 @@
-function ProgressBar(title, percent){
+function ProgressBar(title, percent, theme){
     if(typeof(percent) != "number" || percent > 100 || percent < 0) {
         throw new Error("Enter a valid percent");
     }
     this.title = title;
     this.percent = percent;
+    this.theme = theme;
 }
 ProgressBar.prototype.draw=function() {
     var container = document.createElement('div');
@@ -27,11 +28,11 @@ ProgressBar.prototype.draw=function() {
     percent.innerHTML = this.percent+"%";
 
     container.classList.add("container", "row");
-    label.classList.add("row", "label", "col-4");
+    label.classList.add("row", "label", "col-4", "txt-"+this.theme);
     title.classList.add("label-txt", "col-6");
     percent.classList.add("label-txt", "col-6");
     fullBar.classList.add("full-bar", "col-8");
-    amountBar.classList.add("amount-bar");
+    amountBar.classList.add("amount-bar", "bg-"+this.theme);
 
     fillAmountBar(this.percent, amountBar, percent);
 }

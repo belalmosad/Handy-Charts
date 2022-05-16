@@ -1,0 +1,16 @@
+$themes: (
+    "eggplant":#483248,
+    "peacock": #326872,
+    "slate": #708090,
+    "coquelicot": #ff3800,
+    "pine": #234f1e
+);
+
+@each $name,$val in $themes {
+    .txt-#{$name} {
+        color: $val;
+    }
+    .bg-#{$name} {
+        background-color: $val;
+    }
+}
