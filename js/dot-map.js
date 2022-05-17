@@ -5,7 +5,7 @@ var dotsDiv;
 var legendDiv;
 var keysSpan;
 
-function DotMap(data,title) {
+function DotMap(title, data) {
     validateDotMapParams(data);
     this.data = data;
     this.title = title;
