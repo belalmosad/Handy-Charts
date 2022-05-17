@@ -35,6 +35,19 @@ ProgressBar.prototype.draw=function() {
     fillAmountBar(this.percent, amountBar, percent);
 }
 
+ProgressBar.prototype.setTitle=function(title){
+    this.title = title;
+}
+ProgressBar.prototype.setPercent=function(percent){
+    if(typeof(percent) != "number" || percent > 100 || percent < 0) { 
+        throw new Error("Enter a valid percent");
+    }
+    this.percent = percent;
+}
+ProgressBar.prototype.setTheme=function(theme){
+    this.theme=theme;
+}
+
 function fillAmountBar(percent, amountBar, percentElement) {
     var i = 0;
     var intervalID = setInterval(function() {

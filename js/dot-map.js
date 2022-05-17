@@ -1,9 +1,9 @@
 const themes = ["blue", "rose", "orange" , "yellow", "green", "brown", "sky", "red", "pink", "grey"];
 
-var containerDiv = document.createElement('div');
-var dotsDiv = document.createElement('div');
-var legendDiv = document.createElement('div');
-var keysSpan = document.createElement('span');
+var containerDiv;
+var dotsDiv;
+var legendDiv;
+var keysSpan;
 
 function DotMap(data,title) {
     validateDotMapParams(data);
@@ -18,6 +18,13 @@ DotMap.prototype.draw=function() {
     generateDots(this.data);
 }
 
+DotMap.prototype.setTitle=function(title){
+    this.title = title;
+}
+DotMap.prototype.setData=function(data){
+    validateDotMapParams(data);
+    this.data = data;
+}
 function generateDots(data) {
     var colorIdx = 0;
     for(var entry of data.entries()) {
@@ -60,6 +67,11 @@ function addClasses(){
     legendDiv.classList.add('legend');
 }
 function addToDocument(){
+    containerDiv = document.createElement('div');
+    dotsDiv = document.createElement('div');
+    legendDiv = document.createElement('div');
+    keysSpan = document.createElement('span');
+
     containerDiv.appendChild(dotsDiv);
     containerDiv.appendChild(legendDiv);
     legendDiv.appendChild(keysSpan);
