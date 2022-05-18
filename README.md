@@ -13,7 +13,7 @@ JavaScript library that helps you to create charts for data visualisation.
 
 - ### **Problem 2**: Implementing squares grid to display data (dots, lines. ..etc) on.
     - **Solution**
-        - Create div with class scale that contains *two divs* one div for horizontal lines and the other for vertical lines.
+        - Create `div with class scale` that contains *two divs* one `div for horizontal lines` and the other for `vertical lines`.
         - Using css properties `position: relative` and `bottom` to overlap the vertical lines div over the horizontal lines div.
         - HTML code:
             ```html
