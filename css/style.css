@@ -24,7 +24,7 @@
   }
 }
 
-.row, .center-v, .spread {
+.row, .scale .lines, .center-v, .spread {
   display: flex;
 }
 
@@ -448,6 +448,25 @@
     height: 5px;
     margin: 2px 2px;
   }
+}
+
+.scale {
+  max-height: 500px;
+}
+.scale .lines {
+  height: 500px;
+  justify-content: space-between;
+}
+.scale .lines-v {
+  flex-direction: row;
+}
+.scale .lines-h {
+  flex-direction: column;
+  position: relative;
+  bottom: 500px;
+}
+.scale .line {
+  border: 1px solid rgb(194, 193, 193);
 }
 
 /*# sourceMappingURL=style.css.map */

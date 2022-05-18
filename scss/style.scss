@@ -91,3 +91,24 @@
         border: 1px solid $val;
     }
 }
+
+.scale
+{
+    max-height: 500px;
+    & .lines {
+        @extend .row;
+        height: 500px;
+        justify-content: space-between;
+    }
+    & .lines-v{
+        flex-direction: row;
+    }
+    & .lines-h{
+        flex-direction: column;
+        position: relative;
+        bottom: 500px;
+    }
+    & .line {
+        border: 1px solid rgb(194, 193, 193);
+    }
+}
