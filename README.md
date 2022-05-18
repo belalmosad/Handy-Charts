@@ -69,7 +69,7 @@ JavaScript library that helps you to create charts for data visualisation.
             ```
 
         - Output:
-        <img src="https://github.com/belalmosad/Handy-Charts/blob/main/Assets/squares-grid.PNG" />
+            <img src="https://github.com/belalmosad/Handy-Charts/blob/main/Assets/squares-grid.PNG" />
 
 ## TODOs
 - [x] Implement `ProgressBar` element.
