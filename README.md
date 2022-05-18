@@ -43,30 +43,30 @@ JavaScript library that helps you to create charts for data visualisation.
             ```
 
         - sass code:
-        ```scss
-        .scale
-        {
-            width: 60%;
-            height: 40vw;
-            margin: 0 auto;
-            & .lines {
-                @extend .row;
+            ```scss
+            .scale
+            {
+                width: 60%;
                 height: 40vw;
-                justify-content: space-between;
+                margin: 0 auto;
+                & .lines {
+                    @extend .row;
+                    height: 40vw;
+                    justify-content: space-between;
+                }
+                & .lines-v{
+                    flex-direction: row;
+                }
+                & .lines-h{
+                    flex-direction: column;
+                    position: relative;
+                    bottom: 40vw;
+                }
+                & .line {
+                    border: 1px solid rgb(238, 238, 238);
+                }
             }
-            & .lines-v{
-                flex-direction: row;
-            }
-            & .lines-h{
-                flex-direction: column;
-                position: relative;
-                bottom: 40vw;
-            }
-            & .line {
-                border: 1px solid rgb(238, 238, 238);
-            }
-        }
-        ```
+            ```
 
         - Output:
         <img src="https://github.com/belalmosad/Handy-Charts/blob/main/Assets/squares-grid.PNG" />
@@ -76,4 +76,4 @@ JavaScript library that helps you to create charts for data visualisation.
 - [x] Implement themes in scss.
 - [x] Implement `DotMap` element.
 - [x] Implement change data functionality in `ProgressBar` and  `DotMap`.
-- [ ] Implement Animation in drawing `DotMap`.
+- [ ] Complete squares grid styling and Implement `SquaresGrid` element.
