@@ -94,10 +94,12 @@
 
 .scale
 {
-    max-height: 500px;
+    width: 60%;
+    height: 40vw;
+    margin: 0 auto;
     & .lines {
         @extend .row;
-        height: 500px;
+        height: 40vw;
         justify-content: space-between;
     }
     & .lines-v{
@@ -106,7 +108,7 @@
     & .lines-h{
         flex-direction: column;
         position: relative;
-        bottom: 500px;
+        bottom: 40vw;
     }
     & .line {
         border: 1px solid rgb(194, 193, 193);
