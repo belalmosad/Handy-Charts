@@ -15,26 +15,27 @@ JavaScript library that helps you to create charts for data visualisation.
     - **Solution**
         - Create div with class scale that contains *two divs* one div for horizontal lines and the other for vertical lines.
         - Using css properties `position: relative` and `bottom` to overlap the vertical lines div over the horizontal lines div.
-        - HTML code:
-        ```
-        <div class="scale">
-                <div class="lines lines-v">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
+        HTML code:
+            ```
+            <div class="scale">
+                    <div class="lines lines-v">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
 
-                <div class="lines lines-h">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
-        </div>
-        ```html
-        - sass code:
-        ```
+                    <div class="lines lines-h">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+            </div>
+            ```html
+
+        sass code:
+            ```
             .scale
             {
                 width: 60%;
@@ -57,9 +58,10 @@ JavaScript library that helps you to create charts for data visualisation.
                     border: 1px solid rgb(238, 238, 238);
                 }
             }
-        ```scss
+            ```scss
+
         - Output:
-        <img src="" />
+        <img src="https://github.com/belalmosad/Handy-Charts/blob/main/Assets/squares-grid.PNG" />
 
 ## TODOs
 - [x] Implement `ProgressBar` element.
