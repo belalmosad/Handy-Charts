@@ -27,9 +27,13 @@ JavaScript library that helps you to create charts for data visualisation.
                         <div class="line"></div>
                         <div class="line"></div>
                         <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
                     </div>
 
                     <div class="lines lines-h">
+                        <div class="line"></div>
+                        <div class="line"></div>
                         <div class="line"></div>
                         <div class="line"></div>
                         <div class="line"></div>
