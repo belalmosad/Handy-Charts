@@ -68,7 +68,7 @@ JavaScript library that helps you to create charts for data visualisation.
             }
             ```
 
-        - Output:
+        - Output after putting on scale values (done later!):
         <img src="https://github.com/belalmosad/Handy-Charts/blob/main/Assets/squares-grid.PNG" />
 
 ## TODOs
