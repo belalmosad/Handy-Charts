@@ -24,6 +24,9 @@
         }
     }
 }
+.container-max {
+    max-height: 60vw;
+}
 .progressbar-container {
     @extend .container;
     border: none;
