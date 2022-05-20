@@ -6,7 +6,7 @@ JavaScript library that helps you to create charts for data visualisation.
 - Sass.
 - CSS.
 
-## How it works (Implemented Elements so far!).
+## How it works (Elements Implemented so far!).
 ---
 > **NOTE:** Elements are continuously updated (new elements added and exisiting elements modified).
 ---
