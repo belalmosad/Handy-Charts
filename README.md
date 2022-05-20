@@ -8,7 +8,7 @@ JavaScript library that helps you to create charts for data visualisation.
 
 ## How it works (Implemented Elements so far!).
 ---
-> Elements are continuously updated (new elements added and exisiting elements modified).
+> **NOTE:** Elements are continuously updated (new elements added and exisiting elements modified).
 ---
 
 ## Problems and Solution
