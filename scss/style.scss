@@ -160,3 +160,25 @@
         bottom: calc(60vw + 20px);
     }
 }
+
+.dots{
+    position: relative;
+    height: 40vw;
+    width: 42%;
+    margin: 0 auto;
+    border: 1px dashed red;
+    bottom: 60vw;
+    @media screen and(max-width: 800px) {
+        height: 60vw;
+        width: 70%;
+    }
+    & .scale-dot {
+        position: absolute;
+        top: 38vw;
+        left: -1vw;
+        @media screen and(max-width: 800px) {
+            top: 58vw;
+            left: -2vw;
+        }
+    }
+}
