@@ -11,12 +11,12 @@ JavaScript library that helps you to create charts for data visualisation.
 > **NOTE:** Elements are continuously updated (new elements added and exisiting elements modified).
 ---
 
-## Problems and Solution
-- ### **Problem 1**: Could not imagine how the library works, how to structure files, and how should it be included and used in other projects.
+## Challenge and Solution
+- ### **Challenge 1**: Could not imagine how the library works, how to structure files, and how should it be included and used in other projects.
     - **Solution**: I read many articles about how to create JS library and how to organize files.
 
 
-- ### **Problem 2**: Implementing squares grid to display data on scale (dots, lines. ..etc) on. 
+- ### **Challenge 2**: Implementing squares grid to display data on scale (dots, lines. ..etc) on. 
     ---
     > **NOTE**: Scale Grid is vitally important because it's being used in many visualization elements such as scatter plots (Implemented later!).
     ---
@@ -82,6 +82,10 @@ JavaScript library that helps you to create charts for data visualisation.
 
         - Output after putting on scale values (done later!):
         <img src="https://github.com/belalmosad/Handy-Charts/blob/main/Assets/squares-grid.PNG" />
+
+## Challenge 3: Placing Dots (with x, y position coords) on the scale grid.
+### The data is passed as (x,y) pairs where each pair corresponds to dot location on the scale grid. How should the dots be placed?
+
 
 ## TODOs
 - [x] Implement `ProgressBar` element.
