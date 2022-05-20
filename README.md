@@ -83,8 +83,13 @@ JavaScript library that helps you to create charts for data visualisation.
         - Output after putting on scale values (done later!):
         <img src="https://github.com/belalmosad/Handy-Charts/blob/main/Assets/squares-grid.PNG" />
 
-- ## Challenge 3: Placing Dots (with x, y position coords) on the scale grid.
-  ### The data is passed as (x,y) pairs where each pair corresponds to dot location on the scale grid. How should the dots be placed?
+<<<<<<< HEAD
+- ### Challenge 3: Placing Dots (with x, y position coords) on the scale grid.
+The data is passed as (x,y) pairs where each pair corresponds to dot location on the scale grid. How should the dots be placed?
+=======
+- ### Challenge 3: Placing Dots (with x, y position coords) on the scale grid.
+The data is passed as (x,y) pairs where each pair corresponds to dot location on the scale grid. How should the dots be placed?
+>>>>>>> a60d6ef4948d4a3bba33ddf1f92d2a54d6fc982e
 
 
 ## TODOs
