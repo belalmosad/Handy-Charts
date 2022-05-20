@@ -11,7 +11,10 @@ JavaScript library that helps you to create charts for data visualisation.
     - **Solution**: I read many articles about how to create JS library and how to organize files.
 
 
-- ### **Problem 2**: Implementing squares grid to display data on scale (dots, lines. ..etc) on.
+- ### **Problem 2**: Implementing squares grid to display data on scale (dots, lines. ..etc) on. 
+    ---
+    > **NOTE**: Scale Grid is vitally important because it's being used in many visualization elements such as scatter plots (Implemented later!).
+    ---
     - **Solution**
         - Create `div with class scale` that contains *two divs* one `div for horizontal lines` and the other for `vertical lines`.
         - Using css properties `position: relative` and `bottom` to overlap the vertical lines div over the horizontal lines div.
@@ -81,3 +84,4 @@ JavaScript library that helps you to create charts for data visualisation.
 - [x] Implement `DotMap` element.
 - [x] Implement change data functionality in `ProgressBar` and  `DotMap`.
 - [x] Complete scale grid styling and Implement `SquaresGrid` element.
+- [ ] Implement `ScatterPlot` to displaye dots on scale grid.
