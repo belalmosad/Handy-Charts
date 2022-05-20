@@ -80,4 +80,4 @@ JavaScript library that helps you to create charts for data visualisation.
 - [x] Implement themes in scss.
 - [x] Implement `DotMap` element.
 - [x] Implement change data functionality in `ProgressBar` and  `DotMap`.
-- [ ] Complete squares grid styling and Implement `SquaresGrid` element.
+- [x] Complete squares grid styling and Implement `SquaresGrid` element.
