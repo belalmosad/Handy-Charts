@@ -531,15 +531,18 @@
 }
 
 .dots {
-  position: relative;
+  position: absolute;
   height: 40vw;
   width: 42%;
   margin: 0 auto;
   border: 1px dashed red;
-  bottom: 60vw;
+  bottom: 20vw;
+  left: 28vw;
 }
 @media screen and (max-width: 800px) {
   .dots {
+    bottom: 0vw;
+    left: 14vw;
     height: 60vw;
     width: 70%;
   }
