@@ -21,6 +21,16 @@ ScaleGrid.prototype.draw=function(){
     document.body.appendChild(containerDiv);
 }
 
+ScaleGrid.prototype.setMaxValue=function(maxValue) {
+    if(maxValue < 0.1 || maxValue == Infinity) {
+        throw new Error("You should provide max value >= 0.1 and less than Infinity");
+    }
+    if(typeof(maxValue) != "number") {
+        throw new Error("Enter single number value");
+    }
+    this.maxValue = maxValue;
+}
+
 
 function createScaleHorizontalLines(){
     var hLinesDiv = document.createElement('div');
