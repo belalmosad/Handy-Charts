@@ -174,11 +174,13 @@
     }
     & .scale-dot {
         position: absolute;
-        top: 38vw;
+        width: 10px;
+        height: 10px;
+        top: 39vw;
         left: -1vw;
         @media screen and(max-width: 800px) {
             top: 58vw;
-            left: -2vw;
+            left: -1vw;
         }
     }
 }
