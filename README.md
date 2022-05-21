@@ -107,7 +107,7 @@ JavaScript library that helps you to create charts for data visualisation.
 
   //This will result in placement in position (x,y) = (3,4) 
   ```
-  - <img src="https://github.com/belalmosad/Handy-Charts/blob/main/Assets/dot-placement.PNG" />
+  - <img src="https://github.com/belalmosad/Handy-Charts/blob/main/Assets/dot-placement.png" />
 
 
 
