@@ -84,7 +84,31 @@ JavaScript library that helps you to create charts for data visualisation.
         <img src="https://github.com/belalmosad/Handy-Charts/blob/main/Assets/squares-grid.PNG" />
 
 - ### Challenge 3: Placing Dots (with x, y position coords) on the scale grid.
-  The data is passed as (x,y) pairs where each pair corresponds to dot location on the scale grid. How should the dots be placed?
+  - The data is passed as (x,y) pairs where each pair corresponds to dot location on the scale grid. How should the dots be placed?
+  - The grid is divided to 10 steps horizontally and 10 steps vertically.
+  - So, each step in vertical direction or to horizontal direction will correspond to increase or decrease by 10% of the dot location (change `top` and `left` css properties).
+  ```js
+  // move vertically
+  // topPositionVW is top in VW unit.
+  var scaleHeight = +getComputedStyle(document.querySelector('.scale')).height.slice(0,-2);
+  var verticalStep = scaleHeight / 10;
+  var topPositionVW = getComputedStyle(dot).top.slice(0,-2) * 100 / window.innerWidth;
+  var verticalStepVW = verticalStep * 100 / window.innerWidth;
+  var newTopPosition = topPositionVW - 4*verticalStepVW; // move by 40% -> move four vertical steps
+  dot.style.setProperty('top', newTopPosition+'vw');
+
+  // move horizontally
+  var scaleWidth = +getComputedStyle(document.querySelector('.scale')).width.slice(0,-2);
+  var horizontalStep = scaleWidth / 10;
+  var leftPositionVW = getComputedStyle(dot).left.slice(0,-2) * 100 / window.innerWidth;
+  var horizontalStepVW = horizontalStep * 100 / window.innerWidth;
+  var newLeftPosition = leftPositionVW + 3*horizontalStepVW; // change by 30% -> move three horizontal steps
+  dot.style.setProperty('left', newLeftPosition+'vw');
+
+  //This will result in placement in position (x,y) = (3,4) 
+  ```
+  - <img src="https://github.com/belalmosad/Handy-Charts/blob/main/Assets/dot-placement.PNG" />
+
 
 
 ## TODOs
