@@ -33,9 +33,9 @@ var progressBar = new ProgressBar(<title>, <percent>, <theme>);
     );
     ```
 <div>
-    <img src="https://github.com/belalmosad/Handy-Charts/blob/main/Assets/progress-bar-blue.png" />
-    <img src="https://github.com/belalmosad/Handy-Charts/blob/main/Assets/progress-bar-red.png" />
-    <img src="https://github.com/belalmosad/Handy-Charts/blob/main/Assets/progress-bar-green.png" />
+    <img src="https://github.com/belalmosad/Handy-Charts/blob/main/Assets/progress-bar-blue.PNG" />
+    <img src="https://github.com/belalmosad/Handy-Charts/blob/main/Assets/progress-bar-red.PNG" />
+    <img src="https://github.com/belalmosad/Handy-Charts/blob/main/Assets/progress-bar-green.PNG" />
 <div>
 
 ## Challenge and Solution
