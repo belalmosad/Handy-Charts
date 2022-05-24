@@ -10,6 +10,33 @@ JavaScript library that helps you to create charts for data visualisation.
 ---
 > **NOTE:** Elements are continuously updated (new elements added and exisiting elements modified).
 ---
+### **Progress Bar**
+#### Progress Bar one dimension data element that visualize percentage value.
+```js
+var progressBar = new ProgressBar(<title>, <percent>, <theme>);
+```
+- `title` is a string value that describes title of progress bar.
+- `percent` the numeric value that represents percentage displayed on progress bar. `percent` must be numerical value and no more than 100 and no less than 0.
+- `theme ` is the color of displayed progress bar. Availabe themes so far are as follows:
+    ```scss
+    $themes: (
+        "blue":#003f5c,
+        "rose": #f95d6a,
+        "orange": #ff7c43,
+        "yellow": #ffa600,
+        "green": #4f772d,
+        "brown": #583101,
+        "sky": #90c2e7,
+        "red": #902923,
+        "pink": #ff6392,
+        "grey": #616060
+    );
+    ```
+<div>
+    <img src="https://github.com/belalmosad/Handy-Charts/blob/main/Assets/progress-bar-blue.png" />
+    <img src="https://github.com/belalmosad/Handy-Charts/blob/main/Assets/progress-bar-red.png" />
+    <img src="https://github.com/belalmosad/Handy-Charts/blob/main/Assets/progress-bar-green.png" />
+<div>
 
 ## Challenge and Solution
 - ### **Challenge 1**: Could not imagine how the library works, how to structure files, and how should it be included and used in other projects.
