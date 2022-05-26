@@ -7,11 +7,12 @@ JavaScript library that helps you to create charts for data visualisation.
 - CSS.
 
 ## How it works (Elements Implemented so far!).
+- 1. <a href="https://github.com/belalmosad/Handy-Charts#progress-bar">Progress Bar</a>
 ---
 > **NOTE:** Elements are continuously updated (new elements added and exisiting elements modified).
 ---
-### **Progress Bar**
-#### Progress Bar one dimension data element that visualize percentage value.
+### **1. Progress Bar**
+#### Progress Bar is one dimension data element that visualize percentage value.
 ```js
 var progressBar = new ProgressBar(<title>, <percent>, <theme>);
 ```
@@ -32,11 +33,48 @@ var progressBar = new ProgressBar(<title>, <percent>, <theme>);
         "grey": #616060
     );
     ```
+**Methods**:
+```js
+progressBar.draw(); // draw the progress bar to the document
+progressBar.setTitle(title); // Change title
+progressBar.setData(data);// Change data
+```
 <div>
     <img src="https://github.com/belalmosad/Handy-Charts/blob/main/Assets/progress-bar-blue.PNG" />
     <img src="https://github.com/belalmosad/Handy-Charts/blob/main/Assets/progress-bar-red.PNG" />
     <img src="https://github.com/belalmosad/Handy-Charts/blob/main/Assets/progress-bar-green.PNG" />
 <div>
+
+<hr>
+
+
+
+
+### **2. Dot Map**
+#### Dot Map is used to visualize two dimensional data. Fist dimension is Categorical data and the second is descrete (count) of this data.
+```js
+var dotMap = new DotMap(<title>, <data>);
+```
+- `title` is a string describes the data.
+- `data` is a key-value pairs data structure, where `key` is the category and `value` (integer value) is the count.
+The maximum number of categories (so far) should be 8 (limited to number of themes).
+**Methods**:
+```js
+dotMap.draw(); // draw the dotmap to the document
+dotMap.setTitle(title); // Change title
+dotMap.setData(data);// Change data
+```
+
+<div>
+    <img src="https://github.com/belalmosad/Handy-Charts/blob/main/Assets/progress-bar-blue.PNG" />
+<div>
+
+
+
+
+
+
+
 
 ## Challenge and Solution
 - ### **Challenge 1**: Could not imagine how the library works, how to structure files, and how should it be included and used in other projects.
@@ -109,6 +147,8 @@ var progressBar = new ProgressBar(<title>, <percent>, <theme>);
 
         - Output after putting on scale values (done later!):
         <img src="https://github.com/belalmosad/Handy-Charts/blob/main/Assets/squares-grid.PNG" />
+
+
 
 - ### Challenge 3: Placing Dots (with x, y position coords) on the scale grid.
   - The data is passed as (x,y) pairs where each pair corresponds to dot location on the scale grid. How should the dots be placed?
