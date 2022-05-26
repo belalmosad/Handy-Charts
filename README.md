@@ -7,7 +7,9 @@ JavaScript library that helps you to create charts for data visualisation.
 - CSS.
 
 ## How it works (Elements Implemented so far!).
-- 1. <a href="https://github.com/belalmosad/Handy-Charts#progress-bar">Progress Bar</a>
+1. <a href="https://github.com/belalmosad/Handy-Charts#1-progress-bar">Progress Bar</a>
+2. <a href="https://github.com/belalmosad/Handy-Charts#2-dot-map">Dot Map</a>
+
 ---
 > **NOTE:** Elements are continuously updated (new elements added and exisiting elements modified).
 ---
@@ -66,7 +68,7 @@ dotMap.setData(data);// Change data
 ```
 
 <div>
-    <img src="https://github.com/belalmosad/Handy-Charts/blob/main/Assets/progress-bar-blue.PNG" />
+    <img src="https://github.com/belalmosad/Handy-Charts/blob/main/Assets/dotmap.PNG" />
 <div>
 
 
