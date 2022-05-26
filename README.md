@@ -9,6 +9,8 @@ JavaScript library that helps you to create charts for data visualisation.
 ## How it works (Elements Implemented so far!).
 1. <a href="https://github.com/belalmosad/Handy-Charts#1-progress-bar">Progress Bar</a>
 2. <a href="https://github.com/belalmosad/Handy-Charts#2-dot-map">Dot Map</a>
+3. <a href="https://github.com/belalmosad/Handy-Charts#3-scale-grid">Scale Grid</a>
+
 
 ---
 > **NOTE:** Elements are continuously updated (new elements added and exisiting elements modified).
@@ -37,7 +39,7 @@ var progressBar = new ProgressBar(<title>, <percent>, <theme>);
     ```
 **Methods**:
 ```js
-progressBar.draw(); // draw the progress bar to the document
+progressBar.draw(); // draw the progress bar to the HTML document
 progressBar.setTitle(title); // Change title
 progressBar.setData(data);// Change data
 ```
@@ -62,7 +64,7 @@ var dotMap = new DotMap(<title>, <data>);
 The maximum number of categories (so far) should be 8 (limited to number of themes).
 **Methods**:
 ```js
-dotMap.draw(); // draw the dotmap to the document
+dotMap.draw(); // draw the dotmap to the HTML document
 dotMap.setTitle(title); // Change title
 dotMap.setData(data);// Change data
 ```
@@ -71,9 +73,24 @@ dotMap.setData(data);// Change data
     <img src="https://github.com/belalmosad/Handy-Charts/blob/main/Assets/dotmap.PNG" />
 <div>
 
+<hr>
 
+### **3. Scale Grid**
+#### Scale grid is not a visualization element itself, but it's used widely in other visualization elements such as scatter plots and bubble maps.
+```js
+var scaleGrid = new ScaleGrid(<maxValue>);
+```
+- `maxValue` is the number that defines the value of each step of the grid. Grid is divided to 10 steps. For example if `maxValue = 20`, each step on the grid will be 2 steps. `maxValue` is set to 10 by default.
 
-
+**Methods**
+```js
+scaleGrid.draw(); // draw grid to HTML document
+scaleGrid.setMaxValue(maxValue); // change max value
+```
+Scale grid for `maxValue = 5`. Each step will be (5 / 10) = 0.5
+<div>
+    <img src = "https://github.com/belalmosad/Handy-Charts/blob/main/Assets/scale-grid.PNG" />
+</div>
 
 
 
