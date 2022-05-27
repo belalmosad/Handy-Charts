@@ -1,5 +1,9 @@
 function ScatterPlot(pointsArr) {
-    let maxValue = getMaxValue(pointsArr);
+    this.pointsArr = pointsArr;
+}
+
+ScatterPlot.prototype.draw=function() {
+    let maxValue = getMaxValue(this.pointsArr);
     let scale = new ScaleGrid(maxValue);
     scale.draw();
 }
