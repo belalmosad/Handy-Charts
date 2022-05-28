@@ -19,6 +19,8 @@ ScaleGrid.prototype.draw=function(){
     containerDiv.appendChild(verticalVals);
 
     document.body.appendChild(containerDiv);
+
+    return scaleDiv;
 }
 
 ScaleGrid.prototype.setMaxValue=function(maxValue) {
