@@ -203,4 +203,4 @@ Scale grid for `maxValue = 5`. Each step will be (5 / 10) = 0.5
 - [x] Implement `DotMap` element.
 - [x] Implement change data functionality in `ProgressBar` and  `DotMap`.
 - [x] Complete scale grid styling and Implement `SquaresGrid` element.
-- [ ] Implement `ScatterPlot` to displaye dots on scale grid.
+- [x] Implement `ScatterPlot` to displaye dots on scale grid.
