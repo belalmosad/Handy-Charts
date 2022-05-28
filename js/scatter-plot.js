@@ -1,5 +1,6 @@
-function ScatterPlot(pointsArr) {
+function ScatterPlot(pointsArr,theme="blue") {
     this.pointsArr = pointsArr;
+    this.theme = theme;
 }
 
 ScatterPlot.prototype.draw=function() {
@@ -12,7 +13,7 @@ ScatterPlot.prototype.draw=function() {
 
 
     pointsArr.forEach(point => {
-        let dot = placeDot();
+        let dot = placeDot(this.theme);
         dotsDiv.appendChild(dot);
         moveDot(dot, point, scaleDiv, maxValue);
     });
@@ -33,9 +34,9 @@ function getMaxValue(pointsArr) {
     return max;
 }
 
-function placeDot() {
+function placeDot(theme) {
     let dot = document.createElement('div');
-    dot.classList.add('scale-dot', 'dot-blue');
+    dot.classList.add('scale-dot', `dot-${theme}`);
     return dot;
 }
 
