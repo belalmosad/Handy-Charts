@@ -6,14 +6,15 @@ ScatterPlot.prototype.draw=function() {
     let pointsArr = this.pointsArr;
     let maxValue = getMaxValue(pointsArr);
     let scale = new ScaleGrid(maxValue);
-    scale.draw();
+    let scaleDiv = scale.draw();
 
     let dotsDiv = createDotsDiv();
 
 
     pointsArr.forEach(point => {
-        let dot = placeDot(point);
+        let dot = placeDot();
         dotsDiv.appendChild(dot);
+        moveDot(dot, point, scaleDiv, maxValue);
     });
 
 
@@ -32,34 +33,35 @@ function getMaxValue(pointsArr) {
     return max;
 }
 
-function placeDot(dotCoordinates) {
-    let xPosition = dotCoordinates[0];
-    let yPoistion = dotCoordinates[1];
-
+function placeDot() {
     let dot = document.createElement('div');
-    dot.classList.add('dot-blue', 'scale-dot');
+    dot.classList.add('scale-dot', 'dot-blue');
+    return dot;
+}
 
-    // Move vertically
-    var scaleHeight = +getComputedStyle(document.querySelector('.scale')).height.slice(0,-2);
+function moveDot(dot, coords, scaleDiv, maxValue) {
+    let xPosition = coords[0];
+    let yPoistion = coords[1];
+    let stepFactor = 10 / maxValue;
+
+
+    //Move vertically
+    var scaleHeight = +getComputedStyle(scaleDiv).height.slice(0,-2);
     var verticalStep = scaleHeight / 10;
     var topPositionVW = getComputedStyle(dot).top.slice(0,-2) * 100 / window.innerWidth;
     var verticalStepVW = verticalStep * 100 / window.innerWidth;
-    var newTopPosition = topPositionVW - yPoistion*verticalStepVW;
+    var newTopPosition = topPositionVW - yPoistion*verticalStepVW*stepFactor;
     dot.style.setProperty('top', newTopPosition+'vw');
 
 
-    // move horizontally
-    var scaleWidth = +getComputedStyle(document.querySelector('.scale')).width.slice(0,-2);
+    //move horizontally
+    var scaleWidth = +getComputedStyle(scaleDiv).width.slice(0,-2);
     var horizontalStep = scaleWidth / 10;
     var leftPositionVW = getComputedStyle(dot).left.slice(0,-2) * 100 / window.innerWidth;
     var horizontalStepVW = horizontalStep * 100 / window.innerWidth;
-    var newLeftPosition = leftPositionVW + xPosition*horizontalStepVW; // change by 30% -> move three horizontal steps
+    var newLeftPosition = leftPositionVW + xPosition*horizontalStepVW*stepFactor;
     dot.style.setProperty('left', newLeftPosition+'vw');
-
-    return dot;
-
 }
-
 
 function createDotsDiv() {
     let dotsContainerDiv = document.createElement('div');
