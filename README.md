@@ -120,6 +120,8 @@ let scatterPlot = new ScatterPlot("Scatter plot title",points, "green");
 scatter.draw();
 ```
 
+<img src = "https://github.com/belalmosad/Handy-Charts/blob/main/Assets/scatter-plot.PNG" />
+
 
 
 
