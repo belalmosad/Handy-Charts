@@ -93,6 +93,13 @@
         background-color: $val;
         border: 1px solid $val;
     }
+    .scatter-plot-title-#{$name} {
+        border: 1px solid $val;
+        padding: 5px;
+        text-align: center;
+        font-size: xx-large;
+        color: $val;
+    }
 }
 
 .scale
@@ -186,3 +193,4 @@
         }
     }
 }
+

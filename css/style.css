@@ -175,6 +175,14 @@
   }
 }
 
+.scatter-plot-title-blue {
+  border: 1px solid #003f5c;
+  padding: 5px;
+  text-align: center;
+  font-size: xx-large;
+  color: #003f5c;
+}
+
 .txt-rose {
   color: #f95d6a;
 }
@@ -204,6 +212,14 @@
     height: 5px;
     margin: 2px 2px;
   }
+}
+
+.scatter-plot-title-rose {
+  border: 1px solid #f95d6a;
+  padding: 5px;
+  text-align: center;
+  font-size: xx-large;
+  color: #f95d6a;
 }
 
 .txt-orange {
@@ -237,6 +253,14 @@
   }
 }
 
+.scatter-plot-title-orange {
+  border: 1px solid #ff7c43;
+  padding: 5px;
+  text-align: center;
+  font-size: xx-large;
+  color: #ff7c43;
+}
+
 .txt-yellow {
   color: #ffa600;
 }
@@ -266,6 +290,14 @@
     height: 5px;
     margin: 2px 2px;
   }
+}
+
+.scatter-plot-title-yellow {
+  border: 1px solid #ffa600;
+  padding: 5px;
+  text-align: center;
+  font-size: xx-large;
+  color: #ffa600;
 }
 
 .txt-green {
@@ -299,6 +331,14 @@
   }
 }
 
+.scatter-plot-title-green {
+  border: 1px solid #4f772d;
+  padding: 5px;
+  text-align: center;
+  font-size: xx-large;
+  color: #4f772d;
+}
+
 .txt-brown {
   color: #583101;
 }
@@ -328,6 +368,14 @@
     height: 5px;
     margin: 2px 2px;
   }
+}
+
+.scatter-plot-title-brown {
+  border: 1px solid #583101;
+  padding: 5px;
+  text-align: center;
+  font-size: xx-large;
+  color: #583101;
 }
 
 .txt-sky {
@@ -361,6 +409,14 @@
   }
 }
 
+.scatter-plot-title-sky {
+  border: 1px solid #90c2e7;
+  padding: 5px;
+  text-align: center;
+  font-size: xx-large;
+  color: #90c2e7;
+}
+
 .txt-red {
   color: #902923;
 }
@@ -390,6 +446,14 @@
     height: 5px;
     margin: 2px 2px;
   }
+}
+
+.scatter-plot-title-red {
+  border: 1px solid #902923;
+  padding: 5px;
+  text-align: center;
+  font-size: xx-large;
+  color: #902923;
 }
 
 .txt-pink {
@@ -423,6 +487,14 @@
   }
 }
 
+.scatter-plot-title-pink {
+  border: 1px solid #ff6392;
+  padding: 5px;
+  text-align: center;
+  font-size: xx-large;
+  color: #ff6392;
+}
+
 .txt-grey {
   color: #616060;
 }
@@ -452,6 +524,14 @@
     height: 5px;
     margin: 2px 2px;
   }
+}
+
+.scatter-plot-title-grey {
+  border: 1px solid #616060;
+  padding: 5px;
+  text-align: center;
+  font-size: xx-large;
+  color: #616060;
 }
 
 .scale {

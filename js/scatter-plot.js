@@ -1,9 +1,11 @@
-function ScatterPlot(pointsArr,theme="blue") {
+function ScatterPlot(title,pointsArr,theme="blue") {
+    this.title = title;
     this.pointsArr = pointsArr;
     this.theme = theme;
 }
 
 ScatterPlot.prototype.draw=function() {
+    addScatterPlotTitle(this.title, this.theme);
     let pointsArr = this.pointsArr;
     let maxValue = getMaxValue(pointsArr);
     let scale = new ScaleGrid(maxValue);
@@ -17,8 +19,13 @@ ScatterPlot.prototype.draw=function() {
         dotsDiv.appendChild(dot);
         moveDot(dot, point, scaleDiv, maxValue);
     });
+}
 
-
+function addScatterPlotTitle(title, theme) {
+    let titleDiv = document.createElement('div');
+    titleDiv.classList.add('container', `scatter-plot-title-${theme}`);
+    titleDiv.innerHTML = title;
+    document.body.appendChild(titleDiv);
 }
 
 
