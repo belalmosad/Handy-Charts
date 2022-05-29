@@ -10,6 +10,7 @@ JavaScript library that helps you to create charts for data visualisation.
 1. <a href="https://github.com/belalmosad/Handy-Charts#1-progress-bar">Progress Bar</a>
 2. <a href="https://github.com/belalmosad/Handy-Charts#2-dot-map">Dot Map</a>
 3. <a href="https://github.com/belalmosad/Handy-Charts#3-scale-grid">Scale Grid</a>
+4. <a href="https://github.com/belalmosad/Handy-Charts#4-scatter-plot">Scatter Plot</a>
 
 
 ---
@@ -91,6 +92,33 @@ Scale grid for `maxValue = 5`. Each step will be (5 / 10) = 0.5
 <div>
     <img src = "https://github.com/belalmosad/Handy-Charts/blob/main/Assets/scale-grid.PNG" />
 </div>
+
+<hr>
+
+### **4. Scatter Plot**
+#### Scatter plot is for representing 2D data. Making use of scale grid we can place data with coordinates position (x,y).
+```js
+var scatterPlot = new ScatterPlot(<title>, <pointsData>, <theme>);
+```
+- `title`: Text describing the scatter plot.
+- `pointsData`: Array of arrays where each array represents dot position (x position and y position).
+- `theme`: color (out of available 8 themes so far) to color dots and title. 
+
+**Methods**
+```js
+scatterPlot.draw(); // draw scatter plot to HTML document.
+scatterPlot.setTitle(title); //reset title.
+scatterPlot.setTheme(theme); //reset theme
+scatterPlot.setpointsArr(data); // reset array of arrays that represents data positions
+```
+
+creating scatter plot with data points with 11 data point and green theme
+```js
+
+let points = [[1,2], [2,3], [3,1], [4,4],[4,5],[5,4], [6,6], [6,7], [7,3], [7,7], [10,6]];
+let scatterPlot = new ScatterPlot("Scatter plot title",points, "green");
+scatter.draw();
+```
 
 
 
