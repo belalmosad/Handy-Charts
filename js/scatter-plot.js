@@ -21,6 +21,16 @@ ScatterPlot.prototype.draw=function() {
     });
 }
 
+ScatterPlot.prototype.setTitle=function(title) {
+    this.title = title;
+}
+ScatterPlot.prototype.setTheme=function(theme) {
+this.theme = theme;
+}
+ScatterPlot.prototype.setPointsArr=function(pointsArr) {
+    this.pointsArr = pointsArr
+}
+
 function addScatterPlotTitle(title, theme) {
     let titleDiv = document.createElement('div');
     titleDiv.classList.add('container', `scatter-plot-title-${theme}`);
