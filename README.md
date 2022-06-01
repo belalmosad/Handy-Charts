@@ -19,7 +19,7 @@ JavaScript library that helps you to create charts for data visualisation.
 ### **1. Progress Bar**
 #### Progress Bar is one dimension data element that visualize percentage value.
 ```js
-var progressBar = new ProgressBar(<title>, <percent>, <theme>);
+var progressBar = new ProgressBar(title, percent, theme);
 ```
 - `title` is a string value that describes title of progress bar.
 - `percent` the numeric value that represents percentage displayed on progress bar. `percent` must be numerical value and no more than 100 and no less than 0.
@@ -58,7 +58,7 @@ progressBar.setData(data);// Change data
 ### **2. Dot Map**
 #### Dot Map is used to visualize two dimensional data. Fist dimension is Categorical data and the second is descrete (count) of this data.
 ```js
-var dotMap = new DotMap(<title>, <data>);
+var dotMap = new DotMap(title, data);
 ```
 - `title` is a string describes the data.
 - `data` is a key-value pairs data structure, where `key` is the category and `value` (integer value) is the count.
@@ -79,7 +79,7 @@ dotMap.setData(data);// Change data
 ### **3. Scale Grid**
 #### Scale grid is not a visualization element itself, but it's used widely in other visualization elements such as scatter plots and bubble maps.
 ```js
-var scaleGrid = new ScaleGrid(<maxValue>);
+var scaleGrid = new ScaleGrid(maxValue);
 ```
 - `maxValue` is the number that defines the value of each step of the grid. Grid is divided to 10 steps. For example if `maxValue = 20`, each step on the grid will be 2 steps. `maxValue` is set to 10 by default.
 
@@ -98,7 +98,7 @@ Scale grid for `maxValue = 5`. Each step will be (5 / 10) = 0.5
 ### **4. Scatter Plot**
 #### Scatter plot is for representing 2D data. Making use of scale grid we can place data with coordinates position (x,y).
 ```js
-var scatterPlot = new ScatterPlot(<title>, <pointsData>, <theme>);
+var scatterPlot = new ScatterPlot(title, pointsData, theme);
 ```
 - `title`: Text describing the scatter plot.
 - `pointsData`: Array of arrays where each array represents dot position (x position and y position).
