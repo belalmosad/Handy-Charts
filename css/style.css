@@ -640,4 +640,28 @@
   }
 }
 
+.horizontal-line {
+  width: 100%;
+  border: 2px solid red;
+}
+
+.vertical-line {
+  width: 0%;
+  height: 500px;
+  border: 2px solid green;
+}
+
+.bars {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+}
+.bars .bar {
+  width: 10%;
+  background-color: blue;
+  height: 500px;
+  position: relative;
+  top: -101%;
+}
+
 /*# sourceMappingURL=style.css.map */

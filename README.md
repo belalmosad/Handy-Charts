@@ -234,3 +234,4 @@ scatter.draw();
 - [x] Implement change data functionality in `ProgressBar` and  `DotMap`.
 - [x] Complete scale grid styling and Implement `SquaresGrid` element.
 - [x] Implement `ScatterPlot` to displaye dots on scale grid.
+- [x] Implement `BarChart` to display discrete data horizontally with the values vertically.
