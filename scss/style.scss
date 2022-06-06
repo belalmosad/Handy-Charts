@@ -103,7 +103,7 @@
         background-color: $val;
     }
     .bar-category-#{$name} {
-        background-color: $val;
+        color: $val;
     }
 }
 
@@ -220,11 +220,12 @@
 
 .bar-category {
     width: 15%;
-    border: 2px solid rgba($color: #000000, $alpha: 0.5);
+    border: 1px solid black;
     height: 45px;
     position: fixed;
-    color: whitesmoke;
+    background-color: white;
     text-align: center;
     font-weight: bold;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    opacity: 0.95;
 }
