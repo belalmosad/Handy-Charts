@@ -751,6 +751,7 @@
   font-weight: bold;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   opacity: 0.95;
+  z-index: 3;
 }
 @media screen and (max-width: 600px) {
   .bar-category {
