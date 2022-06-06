@@ -101,9 +101,13 @@
     }
     .bar-#{$name} {
         background-color: $val;
+        &:hover  {
+            background-color: rgba($color: $val, $alpha: 0.1);
+        }
     }
     .bar-category-#{$name} {
         color: $val;
+        
     }
 }
 
@@ -212,15 +216,13 @@
             height: 300px;
             margin-left: 5px;
         }
-        &:hover  {
-            opacity: 0.6;
-        }
+        
         cursor: pointer;
     }
 }
 
 .bar-category {
-    width: 15%;
+    width: 100%;
     border: 1px solid black;
     height: 45px;
     position: fixed;
@@ -228,9 +230,9 @@
     text-align: center;
     font-weight: bold;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    opacity: 0.95;
     @media screen and (max-width: 600px) {
         font-size: small;
+        font-weight: normal;
     }
     z-index: 3;
 }

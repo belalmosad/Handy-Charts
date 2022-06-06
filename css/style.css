@@ -185,6 +185,9 @@
 .bar-blue {
   background-color: #003f5c;
 }
+.bar-blue:hover {
+  background-color: rgba(0, 63, 92, 0.1);
+}
 
 .bar-category-blue {
   color: #003f5c;
@@ -231,6 +234,9 @@
 
 .bar-rose {
   background-color: #f95d6a;
+}
+.bar-rose:hover {
+  background-color: rgba(249, 93, 106, 0.1);
 }
 
 .bar-category-rose {
@@ -279,6 +285,9 @@
 .bar-orange {
   background-color: #ff7c43;
 }
+.bar-orange:hover {
+  background-color: rgba(255, 124, 67, 0.1);
+}
 
 .bar-category-orange {
   color: #ff7c43;
@@ -325,6 +334,9 @@
 
 .bar-yellow {
   background-color: #ffa600;
+}
+.bar-yellow:hover {
+  background-color: rgba(255, 166, 0, 0.1);
 }
 
 .bar-category-yellow {
@@ -373,6 +385,9 @@
 .bar-green {
   background-color: #4f772d;
 }
+.bar-green:hover {
+  background-color: rgba(79, 119, 45, 0.1);
+}
 
 .bar-category-green {
   color: #4f772d;
@@ -419,6 +434,9 @@
 
 .bar-brown {
   background-color: #583101;
+}
+.bar-brown:hover {
+  background-color: rgba(88, 49, 1, 0.1);
 }
 
 .bar-category-brown {
@@ -467,6 +485,9 @@
 .bar-sky {
   background-color: #90c2e7;
 }
+.bar-sky:hover {
+  background-color: rgba(144, 194, 231, 0.1);
+}
 
 .bar-category-sky {
   color: #90c2e7;
@@ -513,6 +534,9 @@
 
 .bar-red {
   background-color: #902923;
+}
+.bar-red:hover {
+  background-color: rgba(144, 41, 35, 0.1);
 }
 
 .bar-category-red {
@@ -561,6 +585,9 @@
 .bar-pink {
   background-color: #ff6392;
 }
+.bar-pink:hover {
+  background-color: rgba(255, 99, 146, 0.1);
+}
 
 .bar-category-pink {
   color: #ff6392;
@@ -607,6 +634,9 @@
 
 .bar-grey {
   background-color: #616060;
+}
+.bar-grey:hover {
+  background-color: rgba(97, 96, 96, 0.1);
 }
 
 .bar-category-grey {
@@ -737,12 +767,9 @@
     margin-left: 5px;
   }
 }
-.bars .bar:hover {
-  opacity: 0.6;
-}
 
 .bar-category {
-  width: 15%;
+  width: 100%;
   border: 1px solid black;
   height: 45px;
   position: fixed;
@@ -750,12 +777,12 @@
   text-align: center;
   font-weight: bold;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  opacity: 0.95;
   z-index: 3;
 }
 @media screen and (max-width: 600px) {
   .bar-category {
     font-size: small;
+    font-weight: normal;
   }
 }
 

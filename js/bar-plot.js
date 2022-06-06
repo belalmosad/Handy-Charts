@@ -24,6 +24,16 @@ class BarPlot {
             
         }
 
+        let allBars = document.getElementsByClassName('bar');
+        for(let bar of allBars) {
+            bar.addEventListener('mouseover', () => {
+                addBarInfo(bar, this.theme);
+            });
+            bar.addEventListener('mouseleave', () => {
+                removeBarInfo(bar);
+            });
+        }
+
 
 
 
@@ -55,6 +65,19 @@ class BarPlot {
             let newElementHeight = elementHeight - percentToDecrease*elementHeight;
             barElement.style.height = newElementHeight+'px';
             barElement.style.transform = `translateY(${elementHeight-newElementHeight}px)`;
+        }
+        function addBarInfo(parent,theme) {
+            removeBarInfo();
+            let barInfoDiv = document.createElement('div');
+            barInfoDiv.classList.add('bar-category', `bar-category-${theme}`);
+            barInfoDiv.innerHTML = ' key';
+            parent.appendChild(barInfoDiv);
+        }
+        function removeBarInfo() {
+            
+            for(let barCategory of document.getElementsByClassName('bar-category')) {
+                barCategory.parentElement.removeChild(barCategory);
+            }
         }
         
     }
