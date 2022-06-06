@@ -16,7 +16,6 @@
 .container {
     width: 70%;
     margin: 0 auto;
-    border: 1px solid black;
     margin-top: 50px;
     &-sm {
         @media  screen and (max-width: 650px){
@@ -203,16 +202,22 @@
     width: 0%;
     height: 500px;
     border: 2px solid green;
+    position: relative;
+    bottom: -50%;
 }
 .bars {
     display: flex;
-    justify-content: space-evenly;
-    position: relative;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
     & .bar {
+        margin-left: 10px;
         width: 10%;
         background-color: blue;
-        height: 500px;
-        position: relative;
-        top: -101%;
+        height: 400px;
+        @media screen and (max-width: 600px) {
+            height: 300px;
+        }
     }
+    
 }
