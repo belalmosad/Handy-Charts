@@ -182,6 +182,10 @@
   color: #003f5c;
 }
 
+.bar-blue {
+  background-color: #003f5c;
+}
+
 .txt-rose {
   color: #f95d6a;
 }
@@ -219,6 +223,10 @@
   text-align: center;
   font-size: xx-large;
   color: #f95d6a;
+}
+
+.bar-rose {
+  background-color: #f95d6a;
 }
 
 .txt-orange {
@@ -260,6 +268,10 @@
   color: #ff7c43;
 }
 
+.bar-orange {
+  background-color: #ff7c43;
+}
+
 .txt-yellow {
   color: #ffa600;
 }
@@ -297,6 +309,10 @@
   text-align: center;
   font-size: xx-large;
   color: #ffa600;
+}
+
+.bar-yellow {
+  background-color: #ffa600;
 }
 
 .txt-green {
@@ -338,6 +354,10 @@
   color: #4f772d;
 }
 
+.bar-green {
+  background-color: #4f772d;
+}
+
 .txt-brown {
   color: #583101;
 }
@@ -375,6 +395,10 @@
   text-align: center;
   font-size: xx-large;
   color: #583101;
+}
+
+.bar-brown {
+  background-color: #583101;
 }
 
 .txt-sky {
@@ -416,6 +440,10 @@
   color: #90c2e7;
 }
 
+.bar-sky {
+  background-color: #90c2e7;
+}
+
 .txt-red {
   color: #902923;
 }
@@ -453,6 +481,10 @@
   text-align: center;
   font-size: xx-large;
   color: #902923;
+}
+
+.bar-red {
+  background-color: #902923;
 }
 
 .txt-pink {
@@ -494,6 +526,10 @@
   color: #ff6392;
 }
 
+.bar-pink {
+  background-color: #ff6392;
+}
+
 .txt-grey {
   color: #616060;
 }
@@ -531,6 +567,10 @@
   text-align: center;
   font-size: xx-large;
   color: #616060;
+}
+
+.bar-grey {
+  background-color: #616060;
 }
 
 .scale {
@@ -639,19 +679,6 @@
   }
 }
 
-.horizontal-line {
-  width: 100%;
-  border: 2px solid red;
-}
-
-.vertical-line {
-  width: 0%;
-  height: 500px;
-  border: 2px solid green;
-  position: relative;
-  bottom: -50%;
-}
-
 .bars {
   display: flex;
   justify-content: space-between;
@@ -661,12 +688,12 @@
 .bars .bar {
   margin-left: 10px;
   width: 10%;
-  background-color: blue;
   height: 400px;
 }
 @media screen and (max-width: 600px) {
   .bars .bar {
     height: 300px;
+    margin-left: 5px;
   }
 }
 
