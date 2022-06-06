@@ -212,9 +212,10 @@
             height: 300px;
             margin-left: 5px;
         }
-        &:hover {
+        &:hover  {
             opacity: 0.6;
         }
+        cursor: pointer;
     }
 }
 
@@ -228,6 +229,9 @@
     font-weight: bold;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     opacity: 0.95;
+    @media screen and (max-width: 600px) {
+        font-size: small;
+    }
 }
 
 .title {
@@ -235,4 +239,5 @@
     font-size: xx-large;
     margin-bottom: 50px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }

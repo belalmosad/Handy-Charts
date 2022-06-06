@@ -729,6 +729,7 @@
   margin-left: 10px;
   width: 10%;
   height: 450px;
+  cursor: pointer;
 }
 @media screen and (max-width: 600px) {
   .bars .bar {
@@ -750,6 +751,11 @@
   font-weight: bold;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   opacity: 0.95;
+}
+@media screen and (max-width: 600px) {
+  .bar-category {
+    font-size: small;
+  }
 }
 
 .title {
