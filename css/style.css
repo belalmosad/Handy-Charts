@@ -186,6 +186,10 @@
   background-color: #003f5c;
 }
 
+.bar-category-blue {
+  background-color: #003f5c;
+}
+
 .txt-rose {
   color: #f95d6a;
 }
@@ -226,6 +230,10 @@
 }
 
 .bar-rose {
+  background-color: #f95d6a;
+}
+
+.bar-category-rose {
   background-color: #f95d6a;
 }
 
@@ -272,6 +280,10 @@
   background-color: #ff7c43;
 }
 
+.bar-category-orange {
+  background-color: #ff7c43;
+}
+
 .txt-yellow {
   color: #ffa600;
 }
@@ -312,6 +324,10 @@
 }
 
 .bar-yellow {
+  background-color: #ffa600;
+}
+
+.bar-category-yellow {
   background-color: #ffa600;
 }
 
@@ -358,6 +374,10 @@
   background-color: #4f772d;
 }
 
+.bar-category-green {
+  background-color: #4f772d;
+}
+
 .txt-brown {
   color: #583101;
 }
@@ -398,6 +418,10 @@
 }
 
 .bar-brown {
+  background-color: #583101;
+}
+
+.bar-category-brown {
   background-color: #583101;
 }
 
@@ -444,6 +468,10 @@
   background-color: #90c2e7;
 }
 
+.bar-category-sky {
+  background-color: #90c2e7;
+}
+
 .txt-red {
   color: #902923;
 }
@@ -484,6 +512,10 @@
 }
 
 .bar-red {
+  background-color: #902923;
+}
+
+.bar-category-red {
   background-color: #902923;
 }
 
@@ -530,6 +562,10 @@
   background-color: #ff6392;
 }
 
+.bar-category-pink {
+  background-color: #ff6392;
+}
+
 .txt-grey {
   color: #616060;
 }
@@ -570,6 +606,10 @@
 }
 
 .bar-grey {
+  background-color: #616060;
+}
+
+.bar-category-grey {
   background-color: #616060;
 }
 
@@ -688,7 +728,7 @@
 .bars .bar {
   margin-left: 10px;
   width: 10%;
-  height: 400px;
+  height: 450px;
 }
 @media screen and (max-width: 600px) {
   .bars .bar {
@@ -698,6 +738,17 @@
 }
 .bars .bar:hover {
   opacity: 0.6;
+}
+
+.bar-category {
+  width: 15%;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  height: 45px;
+  position: fixed;
+  color: whitesmoke;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
