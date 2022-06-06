@@ -752,4 +752,11 @@
   opacity: 0.95;
 }
 
+.title {
+  text-align: center;
+  font-size: xx-large;
+  margin-bottom: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 /*# sourceMappingURL=style.css.map */
