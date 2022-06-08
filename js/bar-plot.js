@@ -17,18 +17,18 @@ class BarPlot {
         containerDiv.appendChild(titleDiv);
         containerDiv.appendChild(barsDiv);
         document.body.appendChild(containerDiv);
-        for(let value of this.data.values()) {
+        for(let [key, value] of this.data.entries()) {
             let barDiv = createBar(this.theme);
             barsDiv.appendChild(barDiv);
             setBarHeight(barDiv, value, this.dataMaxValue);
-            barDiv.innerHTML = value;
+            barDiv.innerHTML = `${key} <br> ${value}`;
             
         }
 
         let allBars = document.getElementsByClassName('bar');
         for(let bar of allBars) {
             bar.addEventListener('mouseover', () => {
-                addBarInfo(bar, this.theme);
+                addBarInfo(bar, this.theme, bar.innerHTML);
             });
             bar.addEventListener('mouseleave', () => {
                 removeBarInfo(bar);
