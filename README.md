@@ -11,6 +11,7 @@ JavaScript library that helps you to create charts for data visualisation.
 2. <a href="https://github.com/belalmosad/Handy-Charts#2-dot-map">Dot Map</a>
 3. <a href="https://github.com/belalmosad/Handy-Charts#3-scale-grid">Scale Grid</a>
 4. <a href="https://github.com/belalmosad/Handy-Charts#4-scatter-plot">Scatter Plot</a>
+5. <a href="https://github.com/belalmosad/Handy-Charts#5-bar-plot">Bar Plot</a>
 
 
 ---
@@ -122,8 +123,39 @@ scatter.draw();
 
 <img src = "https://github.com/belalmosad/Handy-Charts/blob/main/Assets/scatter-plot.PNG" />
 
+<hr>
+
+### **5. Bar Plot**
+#### Bar plot is used to represent 2D data with categories as first dimension (horizontal line) and  discrete data as second dimension (vertical line).
+
+```js
+let barPlot = new BarPlot(title, data, theme);
+```
+
+- `title`: Text describing the barplot.
+- `data`: Map datastructure (key value pairs) where key represents the category and value is numeric value.
+- `theme`: color (out of available 8 themes so far) to color bars and title. 
+
+**Methods**
+```js
+barPlot.draw(); // draw bar plot to HTML document.
+barPlot.setTitle(title); //reset title.
+barPlot.setTheme(theme); //reset theme
+barPlot.setpointsArr(data); // reset data (map).
+```
+Demo creating bar plot.
+```js
+// creating data to be displayed on bar plot
+let map = new Map();
+map.set('A', 5).set('B', 6).set('C', 12).set('D', 10).set('E', 20).set('F', 15).set('G', 5).set('H', 6).set('I', 12).set('J', 10).set('K', 20).set('F', 15);
+
+let barPlot = new BarPlot('Bar Plot Title', map, 'red');
+barPlot.draw();
+```
+<img src = "https://github.com/belalmosad/Handy-Charts/blob/main/Assets/bar-plot.PNG" />
 
 
+<hr>
 
 ## Challenge and Solution
 - ### **Challenge 1**: Could not imagine how the library works, how to structure files, and how should it be included and used in other projects.
