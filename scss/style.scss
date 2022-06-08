@@ -251,3 +251,16 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
 }
+
+.barplot-v-scale {
+    height: 450;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    right: 5%;
+    flex-direction: column;
+    justify-content: space-between;
+    color: rgba(128, 128, 128,0.6);
+}
