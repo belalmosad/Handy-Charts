@@ -25,7 +25,7 @@ class BarPlot {
             
         }
 
-        let allBars = document.getElementsByClassName('bar');
+        let allBars = barsDiv.children;
         for(let bar of allBars) {
             bar.addEventListener('mouseover', () => {
                 addBarInfo(bar, this.theme, bar.innerHTML);
@@ -73,12 +73,25 @@ class BarPlot {
             barInfoDiv.classList.add('bar-category', `bar-category-${theme}`);
             barInfoDiv.innerHTML = key;
             bar.parentElement.insertBefore(barInfoDiv, bar.nextSibling);
+            positionBarInfo(barInfoDiv, bar);
+            console.log(barInfoDiv);
+            console.log(barInfoDiv.getBoundingClientRect());
         }
         function removeBarInfo() {
             
             for(let barCategory of document.getElementsByClassName('bar-category')) {
                 barCategory.parentElement.removeChild(barCategory);
             }
+        }
+
+        function positionBarInfo(barInfoDiv, bar) {
+            let barPositionX = bar.getBoundingClientRect().x;
+            let barPositionY = bar.getBoundingClientRect().top;
+            let barWidth = bar.getBoundingClientRect().width;
+            let barInfoNewX = barPositionX + barWidth;
+            console.log(barInfoNewX);
+            barInfoDiv.style.left = `${barInfoNewX}px`;
+            barInfoDiv.style.top = `${barPositionY}px`;
         }
         
     }
