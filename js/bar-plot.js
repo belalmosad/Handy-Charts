@@ -66,12 +66,12 @@ class BarPlot {
             barElement.style.height = newElementHeight+'px';
             barElement.style.transform = `translateY(${elementHeight-newElementHeight}px)`;
         }
-        function addBarInfo(parent,theme) {
+        function addBarInfo(bar,theme) {
             removeBarInfo();
             let barInfoDiv = document.createElement('div');
             barInfoDiv.classList.add('bar-category', `bar-category-${theme}`);
-            barInfoDiv.innerHTML = ' key';
-            parent.appendChild(barInfoDiv);
+            barInfoDiv.innerHTML = ' key  key key key key key key key key key key key key key key key key key key';
+            bar.parentElement.insertBefore(barInfoDiv, bar.nextSibling);
         }
         function removeBarInfo() {
             
