@@ -21,6 +21,7 @@ class BarPlot {
             let barDiv = createBar(this.theme);
             barsDiv.appendChild(barDiv);
             setBarHeight(barDiv, value, this.dataMaxValue);
+            barDiv.innerHTML = value;
             
         }
 
@@ -66,11 +67,11 @@ class BarPlot {
             barElement.style.height = newElementHeight+'px';
             barElement.style.transform = `translateY(${elementHeight-newElementHeight}px)`;
         }
-        function addBarInfo(bar,theme) {
+        function addBarInfo(bar,theme, key) {
             removeBarInfo();
             let barInfoDiv = document.createElement('div');
             barInfoDiv.classList.add('bar-category', `bar-category-${theme}`);
-            barInfoDiv.innerHTML = ' key  key key key key key key key key key key key key key key key key key key';
+            barInfoDiv.innerHTML = key;
             bar.parentElement.insertBefore(barInfoDiv, bar.nextSibling);
         }
         function removeBarInfo() {

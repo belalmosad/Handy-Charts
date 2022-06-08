@@ -101,6 +101,9 @@
     }
     .bar-#{$name} {
         background-color: $val;
+        color: $val;
+        overflow: hidden;
+        text-align: center;
         &:hover  {
             background-color: rgba($color: $val, $alpha: 0.1);
         }

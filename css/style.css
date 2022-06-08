@@ -184,6 +184,9 @@
 
 .bar-blue {
   background-color: #003f5c;
+  color: #003f5c;
+  overflow: hidden;
+  text-align: center;
 }
 .bar-blue:hover {
   background-color: rgba(0, 63, 92, 0.1);
@@ -234,6 +237,9 @@
 
 .bar-rose {
   background-color: #f95d6a;
+  color: #f95d6a;
+  overflow: hidden;
+  text-align: center;
 }
 .bar-rose:hover {
   background-color: rgba(249, 93, 106, 0.1);
@@ -284,6 +290,9 @@
 
 .bar-orange {
   background-color: #ff7c43;
+  color: #ff7c43;
+  overflow: hidden;
+  text-align: center;
 }
 .bar-orange:hover {
   background-color: rgba(255, 124, 67, 0.1);
@@ -334,6 +343,9 @@
 
 .bar-yellow {
   background-color: #ffa600;
+  color: #ffa600;
+  overflow: hidden;
+  text-align: center;
 }
 .bar-yellow:hover {
   background-color: rgba(255, 166, 0, 0.1);
@@ -384,6 +396,9 @@
 
 .bar-green {
   background-color: #4f772d;
+  color: #4f772d;
+  overflow: hidden;
+  text-align: center;
 }
 .bar-green:hover {
   background-color: rgba(79, 119, 45, 0.1);
@@ -434,6 +449,9 @@
 
 .bar-brown {
   background-color: #583101;
+  color: #583101;
+  overflow: hidden;
+  text-align: center;
 }
 .bar-brown:hover {
   background-color: rgba(88, 49, 1, 0.1);
@@ -484,6 +502,9 @@
 
 .bar-sky {
   background-color: #90c2e7;
+  color: #90c2e7;
+  overflow: hidden;
+  text-align: center;
 }
 .bar-sky:hover {
   background-color: rgba(144, 194, 231, 0.1);
@@ -534,6 +555,9 @@
 
 .bar-red {
   background-color: #902923;
+  color: #902923;
+  overflow: hidden;
+  text-align: center;
 }
 .bar-red:hover {
   background-color: rgba(144, 41, 35, 0.1);
@@ -584,6 +608,9 @@
 
 .bar-pink {
   background-color: #ff6392;
+  color: #ff6392;
+  overflow: hidden;
+  text-align: center;
 }
 .bar-pink:hover {
   background-color: rgba(255, 99, 146, 0.1);
@@ -634,6 +661,9 @@
 
 .bar-grey {
   background-color: #616060;
+  color: #616060;
+  overflow: hidden;
+  text-align: center;
 }
 .bar-grey:hover {
   background-color: rgba(97, 96, 96, 0.1);
