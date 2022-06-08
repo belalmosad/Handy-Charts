@@ -24,21 +24,8 @@ var progressBar = new ProgressBar(title, percent, theme);
 ```
 - `title` is a string value that describes title of progress bar.
 - `percent` the numeric value that represents percentage displayed on progress bar. `percent` must be numerical value and no more than 100 and no less than 0.
-- `theme ` is the color of displayed progress bar. Availabe themes so far are as follows:
-    ```scss
-    $themes: (
-        "blue":#003f5c,
-        "rose": #f95d6a,
-        "orange": #ff7c43,
-        "yellow": #ffa600,
-        "green": #4f772d,
-        "brown": #583101,
-        "sky": #90c2e7,
-        "red": #902923,
-        "pink": #ff6392,
-        "grey": #616060
-    );
-    ```
+- `theme ` is the color of displayed progress bar.
+
 **Methods**:
 ```js
 progressBar.draw(); // draw the progress bar to the HTML document
@@ -258,6 +245,24 @@ barPlot.draw();
   - <img src="https://github.com/belalmosad/Handy-Charts/blob/main/Assets/dot-placement.png" />
 
 
+## Available themes
+### There are 8 available themes (so far). theme is passed as an argument in constructors when creating most elements. Themes are implemented as sass variables as follows:
+
+```scss
+    $themes: (
+        "blue":#003f5c,
+        "rose": #f95d6a,
+        "orange": #ff7c43,
+        "yellow": #ffa600,
+        "green": #4f772d,
+        "brown": #583101,
+        "sky": #90c2e7,
+        "red": #902923,
+        "pink": #ff6392,
+        "grey": #616060
+    );
+```
+
 
 ## TODOs
 - [x] Implement `ProgressBar` element.
@@ -266,4 +271,5 @@ barPlot.draw();
 - [x] Implement change data functionality in `ProgressBar` and  `DotMap`.
 - [x] Complete scale grid styling and Implement `SquaresGrid` element.
 - [x] Implement `ScatterPlot` to displaye dots on scale grid.
-- [x] Implement `BarChart` to display discrete data horizontally with the values vertically.
+- [x] Implement `BarPlot` to display discrete data horizontally with the values vertically.
+
