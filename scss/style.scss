@@ -106,7 +106,7 @@
         word-wrap: break-word;
         text-align: center;
         &:hover  {
-            background-color: rgba($color: $val, $alpha: 0.1);
+            background-color: rgba($color: $val, $alpha: 0.5);
             color: rgba($color: $val, $alpha: 0);
         }
     }
