@@ -103,6 +103,7 @@
         background-color: $val;
         color: $val;
         overflow: hidden;
+        word-wrap: break-word;
         text-align: center;
         &:hover  {
             background-color: rgba($color: $val, $alpha: 0.1);
