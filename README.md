@@ -152,7 +152,7 @@ map.set('A', 5).set('B', 6).set('C', 12).set('D', 10).set('E', 20).set('F', 15).
 let barPlot = new BarPlot('Bar Plot Title', map, 'red');
 barPlot.draw();
 ```
-<img src = "https://github.com/belalmosad/Handy-Charts/blob/main/Assets/bar-plot.PNG" />
+<img src = "https://github.com/belalmosad/Handy-Charts/blob/main/Assets/bar-plot.png" />
 
 
 <hr>
