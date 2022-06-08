@@ -191,6 +191,7 @@
 }
 .bar-blue:hover {
   background-color: rgba(0, 63, 92, 0.1);
+  color: rgba(0, 63, 92, 0);
 }
 
 .bar-category-blue {
@@ -245,6 +246,7 @@
 }
 .bar-rose:hover {
   background-color: rgba(249, 93, 106, 0.1);
+  color: rgba(249, 93, 106, 0);
 }
 
 .bar-category-rose {
@@ -299,6 +301,7 @@
 }
 .bar-orange:hover {
   background-color: rgba(255, 124, 67, 0.1);
+  color: rgba(255, 124, 67, 0);
 }
 
 .bar-category-orange {
@@ -353,6 +356,7 @@
 }
 .bar-yellow:hover {
   background-color: rgba(255, 166, 0, 0.1);
+  color: rgba(255, 166, 0, 0);
 }
 
 .bar-category-yellow {
@@ -407,6 +411,7 @@
 }
 .bar-green:hover {
   background-color: rgba(79, 119, 45, 0.1);
+  color: rgba(79, 119, 45, 0);
 }
 
 .bar-category-green {
@@ -461,6 +466,7 @@
 }
 .bar-brown:hover {
   background-color: rgba(88, 49, 1, 0.1);
+  color: rgba(88, 49, 1, 0);
 }
 
 .bar-category-brown {
@@ -515,6 +521,7 @@
 }
 .bar-sky:hover {
   background-color: rgba(144, 194, 231, 0.1);
+  color: rgba(144, 194, 231, 0);
 }
 
 .bar-category-sky {
@@ -569,6 +576,7 @@
 }
 .bar-red:hover {
   background-color: rgba(144, 41, 35, 0.1);
+  color: rgba(144, 41, 35, 0);
 }
 
 .bar-category-red {
@@ -623,6 +631,7 @@
 }
 .bar-pink:hover {
   background-color: rgba(255, 99, 146, 0.1);
+  color: rgba(255, 99, 146, 0);
 }
 
 .bar-category-pink {
@@ -677,6 +686,7 @@
 }
 .bar-grey:hover {
   background-color: rgba(97, 96, 96, 0.1);
+  color: rgba(97, 96, 96, 0);
 }
 
 .bar-category-grey {
