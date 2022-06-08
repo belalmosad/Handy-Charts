@@ -4,6 +4,7 @@ class BarPlot {
         this.data = data;
         this.theme = theme;
         this.dataMaxValue = Math.max(...Array.from(data.values()));
+        this.dataMinValue = Math.min(...Array.from(data.values()));
     }
     setTitle(title) {this.title = title;}
     setData(data) {this.data = data;}
@@ -13,8 +14,11 @@ class BarPlot {
         let containerDiv = createContainerDiv();
         let titleDiv = createTitleDiv(this.theme);
         let barsDiv = createBarsDiv();
+        let scaleDiv = createScaleDiv();
+        fillScaleDiv(scaleDiv, this.dataMinValue, this.dataMaxValue);
         titleDiv.innerHTML = this.title;
         containerDiv.appendChild(titleDiv);
+        barsDiv.appendChild(scaleDiv);
         containerDiv.appendChild(barsDiv);
         document.body.appendChild(containerDiv);
         for(let [key, value] of this.data.entries()) {
@@ -74,8 +78,6 @@ class BarPlot {
             barInfoDiv.innerHTML = key;
             bar.parentElement.insertBefore(barInfoDiv, bar.nextSibling);
             positionBarInfo(barInfoDiv, bar);
-            console.log(barInfoDiv);
-            console.log(barInfoDiv.getBoundingClientRect());
         }
         function removeBarInfo() {
             
@@ -89,9 +91,22 @@ class BarPlot {
             let barPositionY = bar.getBoundingClientRect().top;
             let barWidth = bar.getBoundingClientRect().width;
             let barInfoNewX = barPositionX + barWidth;
-            console.log(barInfoNewX);
             barInfoDiv.style.left = `${barInfoNewX}px`;
             barInfoDiv.style.top = `${barPositionY}px`;
+        }
+
+        function createScaleDiv() {
+            let scaleDiv = document.createElement('div');
+            scaleDiv.classList.add('barplot-v-scale');
+            return scaleDiv;
+        }
+
+        function fillScaleDiv(scaleDiv, min, max) {
+            for(let i = max; i >= 0 ; i -= min) {
+                let valDiv = document.createElement('div');
+                valDiv.innerHTML = i;
+                scaleDiv.appendChild(valDiv);
+            }
         }
         
     }
