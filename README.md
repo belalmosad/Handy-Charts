@@ -272,4 +272,4 @@ barPlot.draw();
 - [x] Complete scale grid styling and Implement `SquaresGrid` element.
 - [x] Implement `ScatterPlot` to displaye dots on scale grid.
 - [x] Implement `BarPlot` to display discrete data horizontally with the values vertically.
-
+- [x] Implement `VennDiagram` to visually displays all the possible logical relationships between two or three sets.
