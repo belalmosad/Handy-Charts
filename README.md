@@ -273,5 +273,6 @@ barPlot.draw();
 - [x] Implement `ScatterPlot` to displaye dots on scale grid.
 - [x] Implement `BarPlot` to display discrete data horizontally with the values vertically.
 - [x] Implement `VennDiagram` to visually displays all the possible logical relationships between two or three sets.
-- [x] Implement `TimeLine` to display a list of events in chronological order.
-- [x] Implement `SpanChart`  to display dataset ranges between a minimum value and a maximum value. 
+- [ ] Implement `TimeLine` to display a list of events in chronological order.
+- [ ] Implement `SpanChart`  to display dataset ranges between a minimum value and a maximum value. 
+- [ ] Implement  `WordCounter` to show words frequency in article or paragraph
