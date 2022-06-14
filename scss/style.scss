@@ -114,6 +114,13 @@
         color: $val;
         
     }
+
+    .timeline-#{$name} {
+        border:  1px solid $val;
+    }
+    .period-#{$name} {
+        background-color: $val;
+    }
 }
 
 .scale
@@ -266,5 +273,29 @@
     color: rgba(128, 128, 128,0.6);
     @media screen and (max-width: 600px) {
         right: 10%;
+    }
+}
+
+
+.timeline-container {
+    margin: 0 auto;
+    width: 85%;
+    margin-top: 35px;
+    & .timeline {
+        width: 100%;
+        max-height: 0px;
+    }
+    & .periods {
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+        max-height: 0px;
+    }
+    & .period {
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        top: 50%;;
     }
 }

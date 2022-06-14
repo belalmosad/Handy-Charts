@@ -198,6 +198,14 @@
   color: #003f5c;
 }
 
+.timeline-blue {
+  border: 1px solid #003f5c;
+}
+
+.period-blue {
+  background-color: #003f5c;
+}
+
 .txt-rose {
   color: #f95d6a;
 }
@@ -251,6 +259,14 @@
 
 .bar-category-rose {
   color: #f95d6a;
+}
+
+.timeline-rose {
+  border: 1px solid #f95d6a;
+}
+
+.period-rose {
+  background-color: #f95d6a;
 }
 
 .txt-orange {
@@ -308,6 +324,14 @@
   color: #ff7c43;
 }
 
+.timeline-orange {
+  border: 1px solid #ff7c43;
+}
+
+.period-orange {
+  background-color: #ff7c43;
+}
+
 .txt-yellow {
   color: #ffa600;
 }
@@ -361,6 +385,14 @@
 
 .bar-category-yellow {
   color: #ffa600;
+}
+
+.timeline-yellow {
+  border: 1px solid #ffa600;
+}
+
+.period-yellow {
+  background-color: #ffa600;
 }
 
 .txt-green {
@@ -418,6 +450,14 @@
   color: #4f772d;
 }
 
+.timeline-green {
+  border: 1px solid #4f772d;
+}
+
+.period-green {
+  background-color: #4f772d;
+}
+
 .txt-brown {
   color: #583101;
 }
@@ -471,6 +511,14 @@
 
 .bar-category-brown {
   color: #583101;
+}
+
+.timeline-brown {
+  border: 1px solid #583101;
+}
+
+.period-brown {
+  background-color: #583101;
 }
 
 .txt-sky {
@@ -528,6 +576,14 @@
   color: #90c2e7;
 }
 
+.timeline-sky {
+  border: 1px solid #90c2e7;
+}
+
+.period-sky {
+  background-color: #90c2e7;
+}
+
 .txt-red {
   color: #902923;
 }
@@ -581,6 +637,14 @@
 
 .bar-category-red {
   color: #902923;
+}
+
+.timeline-red {
+  border: 1px solid #902923;
+}
+
+.period-red {
+  background-color: #902923;
 }
 
 .txt-pink {
@@ -638,6 +702,14 @@
   color: #ff6392;
 }
 
+.timeline-pink {
+  border: 1px solid #ff6392;
+}
+
+.period-pink {
+  background-color: #ff6392;
+}
+
 .txt-grey {
   color: #616060;
 }
@@ -691,6 +763,14 @@
 
 .bar-category-grey {
   color: #616060;
+}
+
+.timeline-grey {
+  border: 1px solid #616060;
+}
+
+.period-grey {
+  background-color: #616060;
 }
 
 .scale {
@@ -861,6 +941,29 @@
   .barplot-v-scale {
     right: 10%;
   }
+}
+
+.timeline-container {
+  margin: 0 auto;
+  width: 85%;
+  margin-top: 35px;
+}
+.timeline-container .timeline {
+  width: 100%;
+  max-height: 0px;
+}
+.timeline-container .periods {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  max-height: 0px;
+}
+.timeline-container .period {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */
