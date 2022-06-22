@@ -48,7 +48,6 @@
 }
 
 .dotmap-container {
-  border: 1px solid grey;
   border-radius: 5px;
 }
 .dotmap-container .dotmap-title {
@@ -964,6 +963,41 @@
   width: 40px;
   position: absolute;
   top: 50%;
+}
+
+.word-counter {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  width: 70%;
+  margin: 30px auto;
+  font-family: tahoma;
+}
+.word-counter .word-count-title {
+  width: 100%;
+  text-align: center;
+  font-size: xx-large;
+  margin-bottom: 10px;
+}
+.word-counter .words {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.word-counter .word-info {
+  width: 33.333%;
+  font-size: x-large;
+}
+@media screen and (max-width: 500px) {
+  .word-counter .word-info {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .word-counter {
+    width: 80%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
