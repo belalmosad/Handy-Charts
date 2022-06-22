@@ -33,6 +33,7 @@ ProgressBar.prototype.draw=function() {
     amountBar.classList.add("amount-bar", "bg-"+this.theme);
 
     fillAmountBar(this.percent, amountBar, percent);
+    return container
 }
 
 ProgressBar.prototype.setTitle=function(title){
