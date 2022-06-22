@@ -12,10 +12,12 @@ function DotMap(title, data) {
 }
 
 DotMap.prototype.draw=function() {
-    addToDocument();
+    var container = addToDocument();
     addClasses();
     addTitle(this.title);
     generateDots(this.data);
+
+    return container;
 }
 
 DotMap.prototype.setTitle=function(title){
@@ -77,6 +79,8 @@ function addToDocument(){
     legendDiv.appendChild(keysSpan);
     document.body.appendChild(containerDiv);
     keysSpan.innerHTML = 'Keys';
+
+    return containerDiv;
 }
 
 function validateDotMapParams(data) {
