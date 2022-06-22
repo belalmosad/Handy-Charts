@@ -66,3 +66,5 @@ function validateProgressBarParams(args) {
         throw new Error("Enter a valid percent");
     }
 }
+
+export default ProgressBar;

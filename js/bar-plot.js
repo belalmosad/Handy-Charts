@@ -115,3 +115,4 @@ class BarPlot {
 }
 
 
+export default BarPlot;

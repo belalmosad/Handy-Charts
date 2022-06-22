@@ -1,3 +1,5 @@
+import ScaleGrid from "./scale-grid.js";
+
 function ScatterPlot(title,pointsArr,theme="blue") {
     this.title = title;
     this.pointsArr = pointsArr;
@@ -90,3 +92,4 @@ function createDotsDiv() {
     document.body.appendChild(dotsContainerDiv);
     return dotsDiv;
 }
+export default ScatterPlot;

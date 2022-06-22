@@ -87,3 +87,5 @@ function createScaleVerticalValues(num){
     }
     return valuesDiv;
 }
+
+export default ScaleGrid;

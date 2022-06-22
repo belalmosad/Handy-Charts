@@ -105,3 +105,5 @@ function addTitle(title){
 
     containerDiv.prepend(titleDiv);
 }
+
+export default DotMap;
