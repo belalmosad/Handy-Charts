@@ -12,6 +12,7 @@ JavaScript library that helps you to create charts for data visualisation.
 3. <a href="https://github.com/belalmosad/Handy-Charts#3-scale-grid">Scale Grid</a>
 4. <a href="https://github.com/belalmosad/Handy-Charts#4-scatter-plot">Scatter Plot</a>
 5. <a href="https://github.com/belalmosad/Handy-Charts#5-bar-plot">Bar Plot</a>
+6. <a href="https://github.com/belalmosad/Handy-Charts#6-word-counter">Word Counter</a>
 
 
 ---
@@ -175,7 +176,7 @@ let dummyText = "Lorem Ipsum is simply dummy text of the printing and typesettin
 let wordCounter = new WordCounter('What is Lorem Ipsum', dummyText, 'blue');
 wordCounter.draw();
 ```
-<img src = "https://github.com/belalmosad/Handy-Charts/blob/main/Assets/word-counter.png" />
+<img src = "https://github.com/belalmosad/Handy-Charts/blob/main/Assets/word-counter.PNG" />
 
 ## Challenge and Solution
 - ### **Challenge 1**: Could not imagine how the library works, how to structure files, and how should it be included and used in other projects.
