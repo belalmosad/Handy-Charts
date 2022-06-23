@@ -144,6 +144,39 @@ barPlot.draw();
 
 <hr>
 
+
+
+
+
+
+### **6. Word Counter**
+#### Word Counter is aimed to count occurrences of each word in a text or paragraph. The most cool thing about implementing this element is that I could reuse the BarPlot Element that I created before to be used for this element (to visualize the distribution of words occurences).
+
+```js
+let wordCounter = new WordCounter(title, text, theme);
+```
+- `title`: String describing the word counter context.
+- `text`: String containing the words to operate on (to count).
+- `theme`: color (out of available 8 themes so far) to color bars and title. 
+
+**Methods**
+```js
+wordCounter.draw(); // draw word counter to HTML document.
+wordCounter.setTitle(title); //reset title.
+wordCounter.setTheme(theme); //reset theme
+wordCounter.setText(data); // reset text 
+```
+
+Demo creating word counter
+```js
+let dummyText = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+
+
+let wordCounter = new WordCounter('What is Lorem Ipsum', dummyText, 'blue');
+wordCounter.draw();
+```
+<img src = "https://github.com/belalmosad/Handy-Charts/blob/main/Assets/word-counter.png" />
+
 ## Challenge and Solution
 - ### **Challenge 1**: Could not imagine how the library works, how to structure files, and how should it be included and used in other projects.
     - **Solution**: I read many articles about how to create JS library and how to organize files.
