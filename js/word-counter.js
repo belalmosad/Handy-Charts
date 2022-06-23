@@ -2,6 +2,7 @@ function WordCounter (title, data, theme) {
     this.title = title;
     this.data = data;
     this.theme = theme;
+    this.htmlDOMElement = this;
 }
 
 WordCounter.prototype.draw = function() {
@@ -14,6 +15,9 @@ WordCounter.prototype.draw = function() {
     wordsCounterContainer.appendChild(wordsDiv);
 
     document.body.appendChild(wordsCounterContainer);
+
+    this.htmlDOMElement = wordsCounterContainer;
+    return wordsCounterContainer;
 }
 
 function generateWordsMap(data) {
