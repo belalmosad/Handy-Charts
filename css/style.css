@@ -894,7 +894,6 @@
 }
 @media screen and (max-width: 600px) {
   .bars .bar {
-    height: 300px;
     margin-left: 5px;
   }
 }
