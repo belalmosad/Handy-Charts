@@ -9,6 +9,7 @@ function DotMap(title, data) {
     validateDotMapParams(data);
     this.data = data;
     this.title = title;
+    this.htmlDOMElement = this;
 }
 
 DotMap.prototype.draw=function() {
@@ -17,6 +18,7 @@ DotMap.prototype.draw=function() {
     addTitle(this.title);
     generateDots(this.data);
 
+    this.htmlDOMElement = container;
     return container;
 }
 

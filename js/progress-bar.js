@@ -3,6 +3,7 @@ function ProgressBar(title, percent, theme){
     this.title = title;
     this.percent = percent;
     this.theme = theme;
+    this.htmlDOMElement = this;
 }
 ProgressBar.prototype.draw=function() {
     var container = document.createElement('div');
@@ -33,6 +34,8 @@ ProgressBar.prototype.draw=function() {
     amountBar.classList.add("amount-bar", "bg-"+this.theme);
 
     fillAmountBar(this.percent, amountBar, percent);
+
+    this.htmlDOMElement = container;
     return container
 }
 
