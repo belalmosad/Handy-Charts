@@ -309,4 +309,4 @@ wordCounter.draw();
 - [x] Implement `VennDiagram` to visually displays all the possible logical relationships between two or three sets.
 - [ ] Implement `TimeLine` to display a list of events in chronological order.
 - [ ] Implement `SpanChart`  to display dataset ranges between a minimum value and a maximum value. 
-- [ ] Implement  `WordCounter` to show words frequency in article or paragraph
+- [x] Implement  `WordCounter` to show words frequency in article or paragraph
