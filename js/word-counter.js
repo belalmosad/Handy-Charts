@@ -1,3 +1,5 @@
+import {BarPlot} from "./handy-charts.js";
+
 function WordCounter (title, data, theme) {
     this.title = title;
     this.data = data;
@@ -14,6 +16,8 @@ WordCounter.prototype.draw = function() {
     let wordsDiv = generateWordsCountsDivs(wordsMap);
     wordsCounterContainer.appendChild(wordsDiv);
 
+    let barPlot = addBarPlot(wordsMap, this.theme);
+    wordsCounterContainer.appendChild(barPlot);
     document.body.appendChild(wordsCounterContainer);
 
     this.htmlDOMElement = wordsCounterContainer;
@@ -53,5 +57,9 @@ function generateTitleDiv(title, theme) {
     return titleDiv;
 }
 
+function addBarPlot(wordsMap,theme) {
+    let barPlot = new BarPlot('Bar Plot representing Words distribution', wordsMap, theme);
+    return barPlot.draw();
+}
 
 export default WordCounter;
