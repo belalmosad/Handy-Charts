@@ -5,6 +5,7 @@ class BarPlot {
         this.theme = theme;
         this.dataMaxValue = Math.max(...Array.from(data.values()));
         this.dataMinValue = Math.min(...Array.from(data.values()));
+        this.htmlDOMElement = this;
     }
     setTitle(title) { this.title = title; }
     setData(data) { this.data = data; }
@@ -109,6 +110,7 @@ class BarPlot {
             }
         }
 
+        this.htmlDOMElement = containerDiv;
         return containerDiv;
 
     }
