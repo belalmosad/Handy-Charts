@@ -24,6 +24,16 @@ WordCounter.prototype.draw = function() {
     return wordsCounterContainer;
 }
 
+WordCounter.prototype.setTitle = function(title){
+    this.title = title;
+}
+WordCounter.prototype.setText = function(text) {
+    this.text = text;
+}
+WordCounter.prototype.setTheme = function(theme) {
+    this.theme = theme;
+}
+
 function generateWordsMap(data) {
     let wordsMap = new Map();
     let wordsArray = data.split(/[' ',.,!,?,',']/);
