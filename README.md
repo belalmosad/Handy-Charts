@@ -32,6 +32,8 @@ var progressBar = new ProgressBar(title, percent, theme);
 progressBar.draw(); // draw the progress bar to the HTML document
 progressBar.setTitle(title); // Change title
 progressBar.setData(data);// Change data
+
+deleteElement(progressBar); // Remove ProgressBar from DOM
 ```
 <div>
     <img src="https://github.com/belalmosad/Handy-Charts/blob/main/Assets/progress-bar-blue.PNG" />
@@ -57,6 +59,9 @@ The maximum number of categories (so far) should be 8 (limited to number of them
 dotMap.draw(); // draw the dotmap to the HTML document
 dotMap.setTitle(title); // Change title
 dotMap.setData(dataMap);// Change data
+
+deleteElement(dotMap); // Remove dotMap from DOM
+
 ```
 
 <div>
@@ -130,6 +135,8 @@ barPlot.draw(); // draw bar plot to HTML document.
 barPlot.setTitle(title); //reset title.
 barPlot.setTheme(theme); //reset theme
 barPlot.setData(dataMap); // reset data (map).
+
+deleteElement(barPlot); // Remove BarPlot from DOM
 ```
 Demo creating bar plot.
 ```js
@@ -166,6 +173,8 @@ wordCounter.draw(); // draw word counter to HTML document.
 wordCounter.setTitle(title); //reset title.
 wordCounter.setTheme(theme); //reset theme
 wordCounter.setText(data); // reset text 
+
+deleteElement(wordCounter); // Remove WordCounter from DOM
 ```
 
 Demo creating word counter
