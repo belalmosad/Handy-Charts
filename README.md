@@ -47,16 +47,16 @@ progressBar.setData(data);// Change data
 ### **2. Dot Map**
 #### Dot Map is used to visualize two dimensional data. Fist dimension is Categorical data and the second is descrete (count) of this data.
 ```js
-var dotMap = new DotMap(title, data);
+var dotMap = new DotMap(title, dataMap);
 ```
 - `title` is a string describes the data.
-- `data` is a key-value pairs data structure, where `key` is the category and `value` (integer value) is the count.
+- `dataMap` is a key-value pairs data structure (Map), where `key` is the category and `value` (integer value) is the count.
 The maximum number of categories (so far) should be 8 (limited to number of themes).
 **Methods**:
 ```js
 dotMap.draw(); // draw the dotmap to the HTML document
 dotMap.setTitle(title); // Change title
-dotMap.setData(data);// Change data
+dotMap.setData(dataMap);// Change data
 ```
 
 <div>
@@ -87,10 +87,10 @@ Scale grid for `maxValue = 5`. Each step will be (5 / 10) = 0.5
 ### **4. Scatter Plot**
 #### Scatter plot is for representing 2D data. Making use of scale grid we can place data with coordinates position (x,y).
 ```js
-var scatterPlot = new ScatterPlot(title, pointsData, theme);
+var scatterPlot = new ScatterPlot(title, pointsDataArray, theme);
 ```
 - `title`: Text describing the scatter plot.
-- `pointsData`: Array of arrays where each array represents dot position (x position and y position).
+- `pointsDataArray`: Array of arrays where each array represents dot position (x position and y position).
 - `theme`: color (out of available 8 themes so far) to color dots and title. 
 
 **Methods**
@@ -98,7 +98,7 @@ var scatterPlot = new ScatterPlot(title, pointsData, theme);
 scatterPlot.draw(); // draw scatter plot to HTML document.
 scatterPlot.setTitle(title); //reset title.
 scatterPlot.setTheme(theme); //reset theme
-scatterPlot.setpointsArr(data); // reset array of arrays that represents data positions
+scatterPlot.setpointsArr(pointsDataArray); // reset array of arrays that represents data positions
 ```
 
 creating scatter plot with data points with 11 data point and green theme
@@ -106,7 +106,7 @@ creating scatter plot with data points with 11 data point and green theme
 
 let points = [[1,2], [2,3], [3,1], [4,4],[4,5],[5,4], [6,6], [6,7], [7,3], [7,7], [10,6]];
 let scatterPlot = new ScatterPlot("Scatter plot title",points, "green");
-scatter.draw();
+scatterPlot.draw();
 ```
 
 <img src = "https://github.com/belalmosad/Handy-Charts/blob/main/Assets/scatter-plot.PNG" />
@@ -117,11 +117,11 @@ scatter.draw();
 #### Bar plot is used to represent 2D data with categories as first dimension (horizontal line) and  discrete data as second dimension (vertical line).
 
 ```js
-let barPlot = new BarPlot(title, data, theme);
+let barPlot = new BarPlot(title, dataMap, theme);
 ```
 
 - `title`: Text describing the barplot.
-- `data`: Map datastructure (key value pairs) where key represents the category and value is numeric value.
+- `dataMap`: Map datastructure (key value pairs) where key represents the category and value is numeric value.
 - `theme`: color (out of available 8 themes so far) to color bars and title. 
 
 **Methods**
@@ -129,7 +129,7 @@ let barPlot = new BarPlot(title, data, theme);
 barPlot.draw(); // draw bar plot to HTML document.
 barPlot.setTitle(title); //reset title.
 barPlot.setTheme(theme); //reset theme
-barPlot.setpointsArr(data); // reset data (map).
+barPlot.setData(dataMap); // reset data (map).
 ```
 Demo creating bar plot.
 ```js
@@ -178,7 +178,7 @@ wordCounter.draw();
 ```
 <img src = "https://github.com/belalmosad/Handy-Charts/blob/main/Assets/word-counter.PNG" />
 
-## Challenge and Solution
+## Challenges and Solutions
 - ### **Challenge 1**: Could not imagine how the library works, how to structure files, and how should it be included and used in other projects.
     - **Solution**: I read many articles about how to create JS library and how to organize files.
 
