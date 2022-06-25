@@ -205,6 +205,10 @@
   background-color: #003f5c;
 }
 
+.set-bg-blue {
+  background-color: rgba(0, 63, 92, 0.3);
+}
+
 .txt-rose {
   color: #f95d6a;
 }
@@ -266,6 +270,10 @@
 
 .period-rose {
   background-color: #f95d6a;
+}
+
+.set-bg-rose {
+  background-color: rgba(249, 93, 106, 0.3);
 }
 
 .txt-orange {
@@ -331,6 +339,10 @@
   background-color: #ff7c43;
 }
 
+.set-bg-orange {
+  background-color: rgba(255, 124, 67, 0.3);
+}
+
 .txt-yellow {
   color: #ffa600;
 }
@@ -392,6 +404,10 @@
 
 .period-yellow {
   background-color: #ffa600;
+}
+
+.set-bg-yellow {
+  background-color: rgba(255, 166, 0, 0.3);
 }
 
 .txt-green {
@@ -457,6 +473,10 @@
   background-color: #4f772d;
 }
 
+.set-bg-green {
+  background-color: rgba(79, 119, 45, 0.3);
+}
+
 .txt-brown {
   color: #583101;
 }
@@ -518,6 +538,10 @@
 
 .period-brown {
   background-color: #583101;
+}
+
+.set-bg-brown {
+  background-color: rgba(88, 49, 1, 0.3);
 }
 
 .txt-sky {
@@ -583,6 +607,10 @@
   background-color: #90c2e7;
 }
 
+.set-bg-sky {
+  background-color: rgba(144, 194, 231, 0.3);
+}
+
 .txt-red {
   color: #902923;
 }
@@ -644,6 +672,10 @@
 
 .period-red {
   background-color: #902923;
+}
+
+.set-bg-red {
+  background-color: rgba(144, 41, 35, 0.3);
 }
 
 .txt-pink {
@@ -709,6 +741,10 @@
   background-color: #ff6392;
 }
 
+.set-bg-pink {
+  background-color: rgba(255, 99, 146, 0.3);
+}
+
 .txt-grey {
   color: #616060;
 }
@@ -770,6 +806,10 @@
 
 .period-grey {
   background-color: #616060;
+}
+
+.set-bg-grey {
+  background-color: rgba(97, 96, 96, 0.3);
 }
 
 .scale {
@@ -997,6 +1037,30 @@
   .word-counter {
     width: 80%;
   }
+}
+
+.venn-diagram {
+  margin: 20px auto;
+  width: 70%;
+  display: flex;
+}
+.venn-diagram .set-one {
+  width: 40%;
+  height: 0px;
+  padding-bottom: 40%;
+  border-radius: 100%;
+  position: relative;
+  left: 12%;
+  margin: 0 auto;
+}
+.venn-diagram .set-two {
+  width: 40%;
+  height: 0px;
+  padding-bottom: 40%;
+  border-radius: 100%;
+  position: relative;
+  right: 12%;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */

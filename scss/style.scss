@@ -146,6 +146,9 @@ $val in $themes {
     .period-#{$name} {
         background-color: $val;
     }
+    .set-bg-#{$name} {
+        background-color:rgba($color: $val, $alpha: 0.3);
+    }
 }
 
 .scale {
@@ -379,3 +382,29 @@ $val in $themes {
         width: 80%;
     }
 }
+
+.venn-diagram {
+    margin: 20px auto;
+    width: 70%;
+    display: flex;
+    & .set-one {
+        width: 40%;
+        height: 0px;
+        padding-bottom: 40%;
+        border-radius: 100%;
+        position: relative;
+        left: 12%;;
+        margin: 0 auto;
+    
+    }
+    & .set-two{
+        width: 40%;
+        height: 0px;
+        padding-bottom: 40%;
+        border-radius: 100%;
+        position: relative;
+        right: 12%;
+        margin: 0 auto;
+    }
+}
+
