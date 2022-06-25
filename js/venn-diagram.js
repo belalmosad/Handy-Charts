@@ -5,7 +5,15 @@ function VennDiagram(firstSetData, firstSetTheme, secondSetData, secondSetTheme)
     this.secondSetTheme = secondSetTheme;
 }
 
-VennDiagram.prototype.draw = function() {
+VennDiagram.prototype.addFirstSetTitle = function (firstSetTitle = "Set One") {
+    this.firstSetTitle = firstSetTitle;
+}
+
+VennDiagram.prototype.addSecondSetTitle = function (secondSetTitle = "Set Two") {
+    this.secondSettitle = secondSetTitle;
+}
+
+VennDiagram.prototype.draw = function () {
     let vennDiagramDiv = document.createElement('div');
     vennDiagramDiv.classList.add('venn-diagram');
 
@@ -16,7 +24,7 @@ VennDiagram.prototype.draw = function() {
     vennDiagramDiv.appendChild(secondSetDiv);
 
     document.body.appendChild(vennDiagramDiv);
-
+    
     return vennDiagramDiv;
 
 }
