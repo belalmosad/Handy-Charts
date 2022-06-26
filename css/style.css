@@ -1054,6 +1054,7 @@
   left: 12%;
   margin: 0 auto;
   text-align: center;
+  position: relative;
 }
 .venn-diagram .set-two {
   width: 40%;
@@ -1062,6 +1063,12 @@
   border-radius: 100%;
   position: relative;
   right: 12%;
+  margin: 0 auto;
+}
+.venn-diagram .set-one-title, .venn-diagram .set-two-title {
+  width: 50%;
+  padding-top: 100%;
+  text-align: center;
   margin: 0 auto;
 }
 

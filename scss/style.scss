@@ -402,6 +402,7 @@ $val in $themes {
         left: 12%;
         margin: 0 auto;
         text-align: center;
+        position: relative;
     }
 
     & .set-two {
@@ -411,6 +412,13 @@ $val in $themes {
         border-radius: 100%;
         position: relative;
         right: 12%;
+        margin: 0 auto;
+    }
+
+    & .set-one-title, .set-two-title {
+        width: 50%;
+        padding-top: 100%;
+        text-align: center;
         margin: 0 auto;
     }
 }
