@@ -150,6 +150,9 @@ $val in $themes {
     .set-bg-#{$name} {
         background-color: rgba($color: $val, $alpha: 0.3);
     }
+    .set-title-#{$name} {
+        color: rgba($color: $val, $alpha: 0.5);
+    }
 }
 
 .scale {
