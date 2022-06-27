@@ -1117,7 +1117,8 @@
     padding-bottom: 50%;
   }
 }
-.venn-diagram .set-one-title, .venn-diagram .set-two-title {
+.venn-diagram .set-one-title,
+.venn-diagram .set-two-title {
   width: 50%;
   padding-top: 100%;
   text-align: center;
