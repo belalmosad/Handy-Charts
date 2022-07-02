@@ -315,7 +315,9 @@ wordCounter.draw();
 - [x] Complete scale grid styling and Implement `SquaresGrid` element.
 - [x] Implement `ScatterPlot` to displaye dots on scale grid.
 - [x] Implement `BarPlot` to display discrete data horizontally with the values vertically.
-- [ ] Implement `VennDiagram` to visually displays all the possible logical relationships between two or three sets.
-- [ ] Implement `TimeLine` to display a list of events in chronological order.
-- [ ] Implement `SpanChart`  to display dataset ranges between a minimum value and a maximum value. 
-- [x] Implement  `WordCounter` to show words frequency in article or paragraph
+- [x] Implement  `WordCounter` to show words frequency in article or paragraph.
+
+## Further Improvements
+- Implement `VennDiagram` to visually displays all the possible logical relationships between two or three sets.
+- Implement `TimeLine` to display a list of events in chronological order.
+- Implement `SpanChart`  to display dataset ranges between a minimum value and a maximum value. 
